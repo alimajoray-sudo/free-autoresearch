@@ -1,0 +1,22 @@
+[
+  {"id": 1, "question": "optimize this prompt overnight", "expected_keywords": ["free-autoresearch", "autoresearch", "autonomous", "improve"], "category": "autoresearch"},
+  {"id": 2, "question": "what FIDIC clause covers time extensions?", "expected_keywords": ["contract-search", "FIDIC", "contract"], "category": "contract"},
+  {"id": 3, "question": "send an email to the team about the deadline", "expected_keywords": ["email"], "category": "email"},
+  {"id": 4, "question": "translate this PDF to Turkish", "expected_keywords": ["document-translator", "translat"], "category": "translation"},
+  {"id": 5, "question": "check the weather in Jerusalem", "expected_keywords": ["weather"], "category": "weather"},
+  {"id": 6, "question": "search for recent AI news", "expected_keywords": ["perplexity", "search", "web"], "category": "search"},
+  {"id": 7, "question": "turn on the bathroom light", "expected_keywords": ["homeassistant", "home assistant"], "category": "home"},
+  {"id": 8, "question": "check github issues on our repo", "expected_keywords": ["gh-issues", "github"], "category": "github"},
+  {"id": 9, "question": "create a new OpenClaw skill for X", "expected_keywords": ["skill-creator", "skill"], "category": "skill-create"},
+  {"id": 10, "question": "summarize this YouTube video", "expected_keywords": ["youtube-summarizer", "youtube"], "category": "youtube"},
+  {"id": 11, "question": "check the server health", "expected_keywords": ["healthcheck", "health"], "category": "health"},
+  {"id": 12, "question": "research this company for due diligence", "expected_keywords": ["company-research", "research"], "category": "research"},
+  {"id": 13, "question": "manage cloudflare DNS settings", "expected_keywords": ["cloudflare"], "category": "infra"},
+  {"id": 14, "question": "analyze stock performance of AAPL", "expected_keywords": ["stock-analysis", "stock"], "category": "finance"},
+  {"id": 15, "question": "check exchange rate USD to TRY", "expected_keywords": ["exchange-rate"], "category": "finance"},
+  {"id": 16, "question": "reply with voice to this message", "expected_keywords": ["voice-reply", "voice"], "category": "voice"},
+  {"id": 17, "question": "run this task in codex", "expected_keywords": ["coding-agent", "acp", "codex"], "category": "coding"},
+  {"id": 18, "question": "find EU tenders for water treatment", "expected_keywords": ["ted-tenders", "tender"], "category": "tenders"},
+  {"id": 19, "question": "set up a cron job to check RSS feeds", "expected_keywords": ["rss-monitor", "rss"], "category": "monitoring"},
+  {"id": 20, "question": "check OpenClaw gateway status", "expected_keywords": ["openclaw-sysadmin", "openclaw", "gateway"], "category": "sysadmin"}
+]
