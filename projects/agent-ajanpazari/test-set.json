@@ -1,0 +1,236 @@
+[
+  {
+    "id": 1,
+    "question": "What is this agent's personality?",
+    "expected_keywords": [
+      "Ali",
+      "Alice",
+      "CEO",
+      "COO",
+      "Chief"
+    ],
+    "category": "soul-1",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 2,
+    "question": "How should this agent communicate?",
+    "expected_keywords": [
+      "CEO",
+      "Data",
+      "Data-driven",
+      "Proactive",
+      "Protective"
+    ],
+    "category": "soul-2",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 3,
+    "question": "What are this agent's core values?",
+    "expected_keywords": [
+      "Ali",
+      "Alice",
+      "Communication",
+      "English",
+      "Escalate"
+    ],
+    "category": "soul-3",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 4,
+    "question": "What is this agent's role?",
+    "expected_keywords": [
+      "Ali",
+      "Blocker",
+      "CEO",
+      "Collect",
+      "Compile"
+    ],
+    "category": "soul-4",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 5,
+    "question": "What boundaries does this agent have?",
+    "expected_keywords": [
+      "Ali",
+      "Content",
+      "Coordination",
+      "Delegate",
+      "Dev"
+    ],
+    "category": "soul-5",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 6,
+    "question": "What are the agent's core rules?",
+    "expected_keywords": [
+      "AGENTS",
+      "Ali",
+      "Alice",
+      "Break",
+      "COO"
+    ],
+    "category": "agents-1",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 7,
+    "question": "How should tasks be delegated?",
+    "expected_keywords": [
+      "2026-03-28",
+      "8789",
+      "<text>",
+      "Ali",
+      "CEO"
+    ],
+    "category": "agents-2",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 8,
+    "question": "What services are configured?",
+    "expected_keywords": [
+      "2026-03-22",
+      "Agent",
+      "Alice",
+      "BLOCKED",
+      "Blockers"
+    ],
+    "category": "agents-3",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 9,
+    "question": "What commands are available?",
+    "expected_keywords": [
+      "Ali",
+      "Anti",
+      "Anti-Drift",
+      "Archive",
+      "Blocked"
+    ],
+    "category": "agents-4",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 10,
+    "question": "What are the key references?",
+    "expected_keywords": [
+      "Delegation",
+      "Detailed",
+      "SKILL",
+      "delegation-rules",
+      "task-discipline"
+    ],
+    "category": "agents-5",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 11,
+    "question": "What should the heartbeat check?",
+    "expected_keywords": [
+      "2026-03-27",
+      "Ali",
+      "BLOCKED",
+      "Board",
+      "COO"
+    ],
+    "category": "heartbeat-1",
+    "source_file": "HEARTBEAT.md"
+  },
+  {
+    "id": 12,
+    "question": "When should alerts fire?",
+    "expected_keywords": [
+      "Ali",
+      "CEO",
+      "Check",
+      "DONE",
+      "Department"
+    ],
+    "category": "heartbeat-2",
+    "source_file": "HEARTBEAT.md"
+  },
+  {
+    "id": 13,
+    "question": "What monitoring tasks exist?",
+    "expected_keywords": [
+      "<agent>",
+      "Agent",
+      "Cem",
+      "Compile",
+      "Defne"
+    ],
+    "category": "heartbeat-3",
+    "source_file": "HEARTBEAT.md"
+  },
+  {
+    "id": 14,
+    "question": "How often should checks run?",
+    "expected_keywords": [
+      "Agents",
+      "Check",
+      "HEARTBEAT_OK",
+      "Issues",
+      "Never"
+    ],
+    "category": "heartbeat-4",
+    "source_file": "HEARTBEAT.md"
+  },
+  {
+    "id": 15,
+    "question": "Who is the user?",
+    "expected_keywords": [
+      "Ali",
+      "AlinRoman",
+      "Builder",
+      "CEO",
+      "Contact"
+    ],
+    "category": "user-1",
+    "source_file": "USER.md"
+  },
+  {
+    "id": 16,
+    "question": "What tools are available?",
+    "expected_keywords": [
+      "2026-03-25",
+      "2026-03-28",
+      "8789",
+      "<metin>",
+      "CEO"
+    ],
+    "category": "tools-1",
+    "source_file": "TOOLS.md"
+  },
+  {
+    "id": 17,
+    "question": "What services run on which ports?",
+    "expected_keywords": [
+      "CRITICAL",
+      "Deployment",
+      "FastAPI",
+      "Knowledge",
+      "NOT"
+    ],
+    "category": "tools-2",
+    "source_file": "TOOLS.md"
+  },
+  {
+    "id": 18,
+    "question": "What is this agent's identity?",
+    "expected_keywords": [
+      "Ali",
+      "CEO",
+      "COO",
+      "IDENTITY",
+      "Kerem"
+    ],
+    "category": "identity-1",
+    "source_file": "IDENTITY.md"
+  }
+]

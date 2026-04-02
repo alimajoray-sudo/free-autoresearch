@@ -1,0 +1,13 @@
+{
+  "agent": "flip",
+  "workspace": "/Users/alice/.openclaw/workspace-flip",
+  "files": [
+    "SOUL.md",
+    "AGENTS.md",
+    "USER.md",
+    "IDENTITY.md"
+  ],
+  "total_chars": 10125,
+  "test_cases": 16,
+  "created": "2026-04-03T00:44:37.235477"
+}

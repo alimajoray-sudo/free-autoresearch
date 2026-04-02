@@ -1,0 +1,220 @@
+[
+  {
+    "id": 1,
+    "question": "What is this agent's personality?",
+    "expected_keywords": [
+      "Ali",
+      "Alice",
+      "Born",
+      "Drive",
+      "Feb"
+    ],
+    "category": "soul-1",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 2,
+    "question": "How should this agent communicate?",
+    "expected_keywords": [
+      "Action",
+      "Ali",
+      "Capture",
+      "Context",
+      "Cost"
+    ],
+    "category": "soul-2",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 3,
+    "question": "What are this agent's core values?",
+    "expected_keywords": [
+      "Ali",
+      "Alice",
+      "Build",
+      "Communication",
+      "Concise"
+    ],
+    "category": "soul-3",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 4,
+    "question": "What is this agent's role?",
+    "expected_keywords": [
+      "Ali",
+      "Ask",
+      "Boundaries",
+      "Config",
+      "EDIT"
+    ],
+    "category": "soul-4",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 5,
+    "question": "What are the agent's core rules?",
+    "expected_keywords": [
+      "AGENTS",
+      "Acknowledge",
+      "Ali",
+      "Always",
+      "Card"
+    ],
+    "category": "agents-1",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 6,
+    "question": "How should tasks be delegated?",
+    "expected_keywords": [
+      "<title>",
+      "Code",
+      "Commands",
+      "Endpoints",
+      "Google"
+    ],
+    "category": "agents-2",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 7,
+    "question": "What services are configured?",
+    "expected_keywords": [
+      "2026-03-23",
+      "Ali",
+      "CEO",
+      "Changes",
+      "Code"
+    ],
+    "category": "agents-3",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 8,
+    "question": "What should the heartbeat check?",
+    "expected_keywords": [
+      "ACTIVE",
+      "Check",
+      "Checks",
+      "DONE",
+      "EXACTLY"
+    ],
+    "category": "heartbeat-1",
+    "source_file": "HEARTBEAT.md"
+  },
+  {
+    "id": 9,
+    "question": "When should alerts fire?",
+    "expected_keywords": [
+      "Ali",
+      "Calendar",
+      "Check",
+      "Check-in",
+      "DONE"
+    ],
+    "category": "heartbeat-2",
+    "source_file": "HEARTBEAT.md"
+  },
+  {
+    "id": 10,
+    "question": "What monitoring tasks exist?",
+    "expected_keywords": [
+      "Agent",
+      "Alert",
+      "Ali",
+      "Calendar",
+      "Only"
+    ],
+    "category": "heartbeat-3",
+    "source_file": "HEARTBEAT.md"
+  },
+  {
+    "id": 11,
+    "question": "Who is the user?",
+    "expected_keywords": [
+      "+972559754237",
+      "+972584054431",
+      "ALKE",
+      "Ali",
+      "Ankara"
+    ],
+    "category": "user-1",
+    "source_file": "USER.md"
+  },
+  {
+    "id": 12,
+    "question": "What are the user's preferences?",
+    "expected_keywords": [
+      "Advanced",
+      "Ambience",
+      "Binance",
+      "Builder",
+      "CEO"
+    ],
+    "category": "user-2",
+    "source_file": "USER.md"
+  },
+  {
+    "id": 13,
+    "question": "What is the user's professional background?",
+    "expected_keywords": [
+      "Full",
+      "memory-archive-overflow"
+    ],
+    "category": "user-3",
+    "source_file": "USER.md"
+  },
+  {
+    "id": 14,
+    "question": "What tools are available?",
+    "expected_keywords": [
+      "-1003555607159",
+      "-1003575688112",
+      "-1003588004037",
+      "-1003730292799",
+      "-1003774318551"
+    ],
+    "category": "tools-1",
+    "source_file": "TOOLS.md"
+  },
+  {
+    "id": 15,
+    "question": "What services run on which ports?",
+    "expected_keywords": [
+      "-1003877408640",
+      "Account",
+      "Cloudflare",
+      "DeepL",
+      "Email"
+    ],
+    "category": "tools-2",
+    "source_file": "TOOLS.md"
+  },
+  {
+    "id": 16,
+    "question": "How do I access external APIs?",
+    "expected_keywords": [
+      "8799",
+      "8800",
+      "8820",
+      "API",
+      "ContractAI"
+    ],
+    "category": "tools-3",
+    "source_file": "TOOLS.md"
+  },
+  {
+    "id": 17,
+    "question": "What is this agent's identity?",
+    "expected_keywords": [
+      "Ali",
+      "Alice",
+      "Born",
+      "Details",
+      "Feb"
+    ],
+    "category": "identity-1",
+    "source_file": "IDENTITY.md"
+  }
+]

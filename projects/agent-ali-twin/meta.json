@@ -1,0 +1,15 @@
+{
+  "agent": "ali-twin",
+  "workspace": "/Users/alice/.openclaw/workspace-ali-twin",
+  "files": [
+    "SOUL.md",
+    "AGENTS.md",
+    "HEARTBEAT.md",
+    "USER.md",
+    "TOOLS.md",
+    "IDENTITY.md"
+  ],
+  "total_chars": 25119,
+  "test_cases": 19,
+  "created": "2026-04-03T00:44:37.205554"
+}

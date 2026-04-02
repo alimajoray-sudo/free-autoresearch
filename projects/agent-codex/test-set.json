@@ -1,0 +1,195 @@
+[
+  {
+    "id": 1,
+    "question": "What is this agent's personality?",
+    "expected_keywords": [
+      "Actions",
+      "Core",
+      "Great",
+      "Great question!",
+      "Have"
+    ],
+    "category": "soul-1",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 2,
+    "question": "How should this agent communicate?",
+    "expected_keywords": [
+      "Check",
+      "Don",
+      "Earn",
+      "Read",
+      "Search"
+    ],
+    "category": "soul-2",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 3,
+    "question": "What are this agent's core values?",
+    "expected_keywords": [
+      "Boundaries",
+      "Concise",
+      "Just",
+      "Never",
+      "Period"
+    ],
+    "category": "soul-3",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 4,
+    "question": "What is this agent's role?",
+    "expected_keywords": [
+      "Continuity",
+      "Each",
+      "Read",
+      "These",
+      "They"
+    ],
+    "category": "soul-4",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 5,
+    "question": "What are the agent's core rules?",
+    "expected_keywords": [
+      "AGENTS",
+      "BOOTSTRAP",
+      "Before",
+      "First",
+      "Follow"
+    ],
+    "category": "agents-1",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 6,
+    "question": "How should tasks be delegated?",
+    "expected_keywords": [
+      "Also",
+      "Capture",
+      "Daily",
+      "Decisions",
+      "Don"
+    ],
+    "category": "agents-2",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 7,
+    "question": "What services are configured?",
+    "expected_keywords": [
+      "Discord",
+      "Long",
+      "Long-Term",
+      "MEMORY",
+      "Memory"
+    ],
+    "category": "agents-3",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 8,
+    "question": "What commands are available?",
+    "expected_keywords": [
+      "Down",
+      "FILE",
+      "Files",
+      "MEMORY",
+      "Memory"
+    ],
+    "category": "agents-4",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 9,
+    "question": "What are the key references?",
+    "expected_keywords": [
+      "AGENTS",
+      "Brain",
+      "Don",
+      "Ever",
+      "External"
+    ],
+    "category": "agents-5",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 10,
+    "question": "What should the heartbeat check?",
+    "expected_keywords": [
+      "API",
+      "Add",
+      "HEARTBEAT",
+      "Keep"
+    ],
+    "category": "heartbeat-1",
+    "source_file": "HEARTBEAT.md"
+  },
+  {
+    "id": 11,
+    "question": "Who is the user?",
+    "expected_keywords": [
+      "About",
+      "Build",
+      "Context",
+      "Human",
+      "Name"
+    ],
+    "category": "user-1",
+    "source_file": "USER.md"
+  },
+  {
+    "id": 12,
+    "question": "What tools are available?",
+    "expected_keywords": [
+      "Anything",
+      "Camera",
+      "Cameras",
+      "Device",
+      "Entrance"
+    ],
+    "category": "tools-1",
+    "source_file": "TOOLS.md"
+  },
+  {
+    "id": 13,
+    "question": "What services run on which ports?",
+    "expected_keywords": [
+      "Add",
+      "British",
+      "Default",
+      "HomePod",
+      "Keeping"
+    ],
+    "category": "tools-2",
+    "source_file": "TOOLS.md"
+  },
+  {
+    "id": 14,
+    "question": "What is this agent's identity?",
+    "expected_keywords": [
+      "Avatar",
+      "Creature",
+      "Emoji",
+      "IDENTITY",
+      "Make"
+    ],
+    "category": "identity-1",
+    "source_file": "IDENTITY.md"
+  },
+  {
+    "id": 15,
+    "question": "What is this agent's identity?",
+    "expected_keywords": [
+      "IDENTITY",
+      "Notes",
+      "Save",
+      "workspace-relative"
+    ],
+    "category": "identity-2",
+    "source_file": "IDENTITY.md"
+  }
+]

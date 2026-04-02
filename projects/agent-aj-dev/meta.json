@@ -1,0 +1,15 @@
+{
+  "agent": "aj-dev",
+  "workspace": "/Users/alice/.openclaw/workspace-aj-dev",
+  "files": [
+    "SOUL.md",
+    "AGENTS.md",
+    "HEARTBEAT.md",
+    "USER.md",
+    "TOOLS.md",
+    "IDENTITY.md"
+  ],
+  "total_chars": 11306,
+  "test_cases": 17,
+  "created": "2026-04-03T00:44:37.181183"
+}

@@ -1,0 +1,314 @@
+[
+  {
+    "id": 1,
+    "question": "What is this agent's personality?",
+    "expected_keywords": [
+      "Ali",
+      "Assistant",
+      "Cahul",
+      "Control",
+      "Domain"
+    ],
+    "category": "soul-1",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 2,
+    "question": "How should this agent communicate?",
+    "expected_keywords": [
+      "After",
+      "Always",
+      "Check",
+      "Every",
+      "Never"
+    ],
+    "category": "soul-2",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 3,
+    "question": "What are this agent's core values?",
+    "expected_keywords": [
+      "Ali",
+      "Automation",
+      "Build",
+      "Drive",
+      "Every"
+    ],
+    "category": "soul-3",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 4,
+    "question": "What is this agent's role?",
+    "expected_keywords": [
+      "API",
+      "Ali",
+      "Broken",
+      "Cahul",
+      "Cloud"
+    ],
+    "category": "soul-4",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 5,
+    "question": "What boundaries does this agent have?",
+    "expected_keywords": [
+      "Assistant",
+      "Automation",
+      "BLE",
+      "Cahul",
+      "Device"
+    ],
+    "category": "soul-5",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 6,
+    "question": "What are the agent's core rules?",
+    "expected_keywords": [
+      "AGENTS",
+      "ALWAYS",
+      "Acknowledge",
+      "Agent",
+      "Ali"
+    ],
+    "category": "agents-1",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 7,
+    "question": "How should tasks be delegated?",
+    "expected_keywords": [
+      "Ask",
+      "Chat",
+      "Daily",
+      "Don",
+      "Group"
+    ],
+    "category": "agents-2",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 8,
+    "question": "What services are configured?",
+    "expected_keywords": [
+      "API",
+      "Assistant",
+      "Control",
+      "Discord",
+      "EVERYTHING"
+    ],
+    "category": "agents-3",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 9,
+    "question": "What commands are available?",
+    "expected_keywords": [
+      " --url-path ",
+      "$HA_TOKEN",
+      "API",
+      "HA_TOKEN",
+      "HA_WEBSOCKET_REFERENCE"
+    ],
+    "category": "agents-4",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 10,
+    "question": "What are the key references?",
+    "expected_keywords": [
+      "ACP",
+      "Ali",
+      "Alice",
+      "Announcements",
+      "Config"
+    ],
+    "category": "agents-5",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 11,
+    "question": "What should the heartbeat check?",
+    "expected_keywords": [
+      " -H ",
+      "API",
+      "Actionable",
+      "Assistant",
+      "Authorization"
+    ],
+    "category": "heartbeat-1",
+    "source_file": "HEARTBEAT.md"
+  },
+  {
+    "id": 12,
+    "question": "When should alerts fire?",
+    "expected_keywords": [
+      " -H ",
+      "Alert",
+      "Authorization",
+      "Authorization: Bearer $CAHUL_HA_TOKEN",
+      "Bearer"
+    ],
+    "category": "heartbeat-2",
+    "source_file": "HEARTBEAT.md"
+  },
+  {
+    "id": 13,
+    "question": "What monitoring tasks exist?",
+    "expected_keywords": [
+      "Alert",
+      "Authorization",
+      "Authorization: Bearer $HA_TOKEN",
+      "Bearer",
+      "HA_TOKEN"
+    ],
+    "category": "heartbeat-3",
+    "source_file": "HEARTBEAT.md"
+  },
+  {
+    "id": 14,
+    "question": "Who is the user?",
+    "expected_keywords": [
+      "+972559754237",
+      "+972584054431",
+      "Ah-LEE",
+      "Ali",
+      "Ankara"
+    ],
+    "category": "user-1",
+    "source_file": "USER.md"
+  },
+  {
+    "id": 15,
+    "question": "What are the user's preferences?",
+    "expected_keywords": [
+      "+37378722073",
+      "+40743102278",
+      "+905435694567",
+      "+970562204000",
+      "+970595473712"
+    ],
+    "category": "user-2",
+    "source_file": "USER.md"
+  },
+  {
+    "id": 16,
+    "question": "What is the user's professional background?",
+    "expected_keywords": [
+      "AFD",
+      "Bank",
+      "Cahul",
+      "Core",
+      "Education"
+    ],
+    "category": "user-3",
+    "source_file": "USER.md"
+  },
+  {
+    "id": 17,
+    "question": "What contact info is available?",
+    "expected_keywords": [
+      "Ambience",
+      "Binance",
+      "CEO",
+      "Contract",
+      "Cozy"
+    ],
+    "category": "user-4",
+    "source_file": "USER.md"
+  },
+  {
+    "id": 18,
+    "question": "What projects is the user working on?",
+    "expected_keywords": [
+      "Builder",
+      "Diversify",
+      "Leverage",
+      "Rapid",
+      "Show"
+    ],
+    "category": "user-5",
+    "source_file": "USER.md"
+  },
+  {
+    "id": 19,
+    "question": "What tools are available?",
+    "expected_keywords": [
+      "API",
+      "Access",
+      "Agent",
+      "Alice",
+      "Assistant"
+    ],
+    "category": "tools-1",
+    "source_file": "TOOLS.md"
+  },
+  {
+    "id": 20,
+    "question": "What services run on which ports?",
+    "expected_keywords": [
+      "4c759a43-5ea8-4fe2-b37d-2a6c085e3dff",
+      "8c007ec4-bbf6-42c5-a8b4-9b762aa32411",
+      "Active",
+      "CAHUL_HA_TOKEN",
+      "Cahul"
+    ],
+    "category": "tools-2",
+    "source_file": "TOOLS.md"
+  },
+  {
+    "id": 21,
+    "question": "How do I access external APIs?",
+    "expected_keywords": [
+      "Apartment",
+      "Cahul",
+      "Important",
+      "Jerusalem",
+      "LED"
+    ],
+    "category": "tools-3",
+    "source_file": "TOOLS.md"
+  },
+  {
+    "id": 22,
+    "question": "What are the infrastructure endpoints?",
+    "expected_keywords": [
+      "AirPlay",
+      "Android",
+      "Control",
+      "Devices",
+      "Entities"
+    ],
+    "category": "tools-4",
+    "source_file": "TOOLS.md"
+  },
+  {
+    "id": 23,
+    "question": "What scripts can I use?",
+    "expected_keywords": [
+      "Android",
+      "Auto",
+      "Auto-conversion",
+      "Converted",
+      "High"
+    ],
+    "category": "tools-5",
+    "source_file": "TOOLS.md"
+  },
+  {
+    "id": 24,
+    "question": "What is this agent's identity?",
+    "expected_keywords": [
+      "Ali",
+      "Cahul",
+      "Details",
+      "Ember",
+      "IDENTITY"
+    ],
+    "category": "identity-1",
+    "source_file": "IDENTITY.md"
+  }
+]

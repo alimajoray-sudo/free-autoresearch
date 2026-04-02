@@ -1,0 +1,15 @@
+{
+  "agent": "email-assistant",
+  "workspace": "/Users/alice/.openclaw/workspace-email-assistant",
+  "files": [
+    "SOUL.md",
+    "AGENTS.md",
+    "HEARTBEAT.md",
+    "USER.md",
+    "TOOLS.md",
+    "IDENTITY.md"
+  ],
+  "total_chars": 9151,
+  "test_cases": 16,
+  "created": "2026-04-03T00:44:37.225329"
+}

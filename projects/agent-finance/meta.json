@@ -1,0 +1,15 @@
+{
+  "agent": "finance",
+  "workspace": "/Users/alice/.openclaw/workspace-finance",
+  "files": [
+    "SOUL.md",
+    "AGENTS.md",
+    "HEARTBEAT.md",
+    "USER.md",
+    "TOOLS.md",
+    "IDENTITY.md"
+  ],
+  "total_chars": 19229,
+  "test_cases": 25,
+  "created": "2026-04-03T00:44:37.231456"
+}

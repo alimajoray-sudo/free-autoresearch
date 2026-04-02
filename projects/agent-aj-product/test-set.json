@@ -1,0 +1,248 @@
+[
+  {
+    "id": 1,
+    "question": "What is this agent's personality?",
+    "expected_keywords": [
+      "Ali",
+      "Bu ajan\u0131 alan esnaf ne bekler?",
+      "CEO",
+      "COO",
+      "Cem"
+    ],
+    "category": "soul-1",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 2,
+    "question": "How should this agent communicate?",
+    "expected_keywords": [
+      "Ali",
+      "Net",
+      "PRD",
+      "Pragmatist",
+      "Sorularla"
+    ],
+    "category": "soul-2",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 3,
+    "question": "What are this agent's core values?",
+    "expected_keywords": [
+      "API",
+      "Ajan",
+      "Ali",
+      "Asla",
+      "COO"
+    ],
+    "category": "soul-3",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 4,
+    "question": "What is this agent's role?",
+    "expected_keywords": [
+      "ALWAYS",
+      "Ali",
+      "Always",
+      "CEO",
+      "Comms"
+    ],
+    "category": "soul-4",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 5,
+    "question": "What are the agent's core rules?",
+    "expected_keywords": [
+      "AGENTS",
+      "Ali",
+      "Card",
+      "Core",
+      "Hedef"
+    ],
+    "category": "agents-1",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 6,
+    "question": "How should tasks be delegated?",
+    "expected_keywords": [
+      "2026-03-22",
+      "ALL",
+      "BLOCKED",
+      "COO",
+      "Communication"
+    ],
+    "category": "agents-2",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 7,
+    "question": "What services are configured?",
+    "expected_keywords": [
+      "Ajan",
+      "Ali",
+      "CEO",
+      "COO",
+      "Content"
+    ],
+    "category": "agents-3",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 8,
+    "question": "What commands are available?",
+    "expected_keywords": [
+      "Agent",
+      "Booster",
+      "Browser",
+      "COO",
+      "Cross"
+    ],
+    "category": "agents-4",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 9,
+    "question": "What are the key references?",
+    "expected_keywords": [
+      "Ali",
+      "Anti",
+      "Anti-drift",
+      "BLOCKED",
+      "Batch"
+    ],
+    "category": "agents-5",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 10,
+    "question": "What should the heartbeat check?",
+    "expected_keywords": [
+      "2026-03-25",
+      "Alice",
+      "BLOCKED",
+      "CEO",
+      "COO"
+    ],
+    "category": "heartbeat-1",
+    "source_file": "HEARTBEAT.md"
+  },
+  {
+    "id": 11,
+    "question": "When should alerts fire?",
+    "expected_keywords": [
+      "After",
+      "Ali",
+      "Answers",
+      "COO",
+      "Checks"
+    ],
+    "category": "heartbeat-2",
+    "source_file": "HEARTBEAT.md"
+  },
+  {
+    "id": 12,
+    "question": "What monitoring tasks exist?",
+    "expected_keywords": [
+      "Ali",
+      "COO",
+      "Check",
+      "END",
+      "HEARTBEAT_OK"
+    ],
+    "category": "heartbeat-3",
+    "source_file": "HEARTBEAT.md"
+  },
+  {
+    "id": 13,
+    "question": "How often should checks run?",
+    "expected_keywords": [
+      "ALL",
+      "Ali",
+      "BLOCKED",
+      "CEO",
+      "Cem"
+    ],
+    "category": "heartbeat-4",
+    "source_file": "HEARTBEAT.md"
+  },
+  {
+    "id": 14,
+    "question": "What are the alert rules?",
+    "expected_keywords": [
+      "Active",
+      "Add",
+      "Adding",
+      "Always",
+      "CEO"
+    ],
+    "category": "heartbeat-5",
+    "source_file": "HEARTBEAT.md"
+  },
+  {
+    "id": 15,
+    "question": "Who is the user?",
+    "expected_keywords": [
+      "Ali",
+      "Asia",
+      "CEO",
+      "Diller",
+      "Dimona"
+    ],
+    "category": "user-1",
+    "source_file": "USER.md"
+  },
+  {
+    "id": 16,
+    "question": "What tools are available?",
+    "expected_keywords": [
+      "Anything",
+      "Camera",
+      "Cameras",
+      "Device",
+      "Entrance"
+    ],
+    "category": "tools-1",
+    "source_file": "TOOLS.md"
+  },
+  {
+    "id": 17,
+    "question": "What services run on which ports?",
+    "expected_keywords": [
+      "Add",
+      "British",
+      "Default",
+      "HomePod",
+      "Keeping"
+    ],
+    "category": "tools-2",
+    "source_file": "TOOLS.md"
+  },
+  {
+    "id": 18,
+    "question": "What is this agent's identity?",
+    "expected_keywords": [
+      "Avatar",
+      "Creature",
+      "Emoji",
+      "IDENTITY",
+      "Make"
+    ],
+    "category": "identity-1",
+    "source_file": "IDENTITY.md"
+  },
+  {
+    "id": 19,
+    "question": "What is this agent's identity?",
+    "expected_keywords": [
+      "IDENTITY",
+      "Notes",
+      "Save",
+      "workspace-relative"
+    ],
+    "category": "identity-2",
+    "source_file": "IDENTITY.md"
+  }
+]

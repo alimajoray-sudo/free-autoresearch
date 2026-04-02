@@ -1,0 +1,210 @@
+[
+  {
+    "id": 1,
+    "question": "What is this agent's personality?",
+    "expected_keywords": [
+      "Actions",
+      "Core",
+      "Great",
+      "Great question!",
+      "Have"
+    ],
+    "category": "soul-1",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 2,
+    "question": "How should this agent communicate?",
+    "expected_keywords": [
+      "Check",
+      "Don",
+      "Earn",
+      "Read",
+      "Search"
+    ],
+    "category": "soul-2",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 3,
+    "question": "What are this agent's core values?",
+    "expected_keywords": [
+      "Boundaries",
+      "Concise",
+      "Just",
+      "Never",
+      "Period"
+    ],
+    "category": "soul-3",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 4,
+    "question": "What is this agent's role?",
+    "expected_keywords": [
+      "Base",
+      "Business",
+      "Continuity",
+      "Conversations",
+      "Crucial"
+    ],
+    "category": "soul-4",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 5,
+    "question": "What boundaries does this agent have?",
+    "expected_keywords": [
+      "8820",
+      "Content",
+      "Content-Type",
+      "Content-Type: application/json",
+      "POST"
+    ],
+    "category": "soul-5",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 6,
+    "question": "What are the agent's core rules?",
+    "expected_keywords": [
+      "ACP",
+      "Actionable",
+      "Agent",
+      "Ali",
+      "Assistant"
+    ],
+    "category": "agents-1",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 7,
+    "question": "How should tasks be delegated?",
+    "expected_keywords": [
+      "-1003730292799",
+      "Alert",
+      "Alerts",
+      "Ali",
+      "Check"
+    ],
+    "category": "agents-2",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 8,
+    "question": "What services are configured?",
+    "expected_keywords": [
+      "ANY",
+      "After",
+      "Answer",
+      "Answer-only",
+      "Code"
+    ],
+    "category": "agents-3",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 9,
+    "question": "What commands are available?",
+    "expected_keywords": [
+      "Agent",
+      "Ali",
+      "Collaboration",
+      "Cross",
+      "Cross-Agent"
+    ],
+    "category": "agents-4",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 10,
+    "question": "What are the key references?",
+    "expected_keywords": [
+      "...",
+      "ALWAYS",
+      "Alice",
+      "Complete",
+      "Delegation"
+    ],
+    "category": "agents-5",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 11,
+    "question": "What should the heartbeat check?",
+    "expected_keywords": [
+      "Actionable",
+      "Assistant",
+      "Before",
+      "Blocked",
+      "Classify"
+    ],
+    "category": "heartbeat-1",
+    "source_file": "HEARTBEAT.md"
+  },
+  {
+    "id": 12,
+    "question": "When should alerts fire?",
+    "expected_keywords": [
+      "-1003730292799",
+      "Alerts",
+      "Check",
+      "Compare",
+      "Email"
+    ],
+    "category": "heartbeat-2",
+    "source_file": "HEARTBEAT.md"
+  },
+  {
+    "id": 13,
+    "question": "Who is the user?",
+    "expected_keywords": [
+      "About",
+      "Build",
+      "Context",
+      "Human",
+      "Name"
+    ],
+    "category": "user-1",
+    "source_file": "USER.md"
+  },
+  {
+    "id": 14,
+    "question": "What tools are available?",
+    "expected_keywords": [
+      "Address",
+      "Check",
+      "Digest",
+      "Email",
+      "Google"
+    ],
+    "category": "tools-1",
+    "source_file": "TOOLS.md"
+  },
+  {
+    "id": 15,
+    "question": "What services run on which ports?",
+    "expected_keywords": [
+      "-1003730292799",
+      "Alerts",
+      "Apps",
+      "Cron",
+      "Email"
+    ],
+    "category": "tools-2",
+    "source_file": "TOOLS.md"
+  },
+  {
+    "id": 16,
+    "question": "What is this agent's identity?",
+    "expected_keywords": [
+      "Ali",
+      "Assistant",
+      "Classify",
+      "Email",
+      "Lean"
+    ],
+    "category": "identity-1",
+    "source_file": "IDENTITY.md"
+  }
+]

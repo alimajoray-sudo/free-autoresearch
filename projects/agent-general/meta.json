@@ -1,0 +1,15 @@
+{
+  "agent": "general",
+  "workspace": "/Users/alice/.openclaw/workspace-general",
+  "files": [
+    "SOUL.md",
+    "AGENTS.md",
+    "HEARTBEAT.md",
+    "USER.md",
+    "TOOLS.md",
+    "IDENTITY.md"
+  ],
+  "total_chars": 24384,
+  "test_cases": 20,
+  "created": "2026-04-03T00:44:37.242086"
+}

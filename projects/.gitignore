@@ -1,0 +1,5 @@
+# Agent-specific projects contain private workspace data
+agent-*/system-prompt.md
+agent-*/best/
+agent-*/experiments.jsonl
+agent-*/status.json

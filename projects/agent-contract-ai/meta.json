@@ -1,0 +1,15 @@
+{
+  "agent": "contract-ai",
+  "workspace": "/Users/alice/.openclaw/workspace-contract-ai",
+  "files": [
+    "SOUL.md",
+    "AGENTS.md",
+    "HEARTBEAT.md",
+    "USER.md",
+    "TOOLS.md",
+    "IDENTITY.md"
+  ],
+  "total_chars": 23842,
+  "test_cases": 25,
+  "created": "2026-04-03T00:44:37.221299"
+}

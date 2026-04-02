@@ -1,0 +1,236 @@
+[
+  {
+    "id": 1,
+    "question": "What is this agent's personality?",
+    "expected_keywords": [
+      "Ali",
+      "CEO",
+      "COO",
+      "Code",
+      "Company"
+    ],
+    "category": "soul-1",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 2,
+    "question": "How should this agent communicate?",
+    "expected_keywords": [
+      "Automated",
+      "Bug",
+      "Code",
+      "Critical",
+      "Deployment"
+    ],
+    "category": "soul-2",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 3,
+    "question": "What are this agent's core values?",
+    "expected_keywords": [
+      "ALWAYS",
+      "Alert",
+      "Ali",
+      "CEO",
+      "Communication"
+    ],
+    "category": "soul-3",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 4,
+    "question": "What is this agent's role?",
+    "expected_keywords": [
+      "Always",
+      "Comms",
+      "Cross",
+      "Cross-Dept",
+      "Dept"
+    ],
+    "category": "soul-4",
+    "source_file": "SOUL.md"
+  },
+  {
+    "id": 5,
+    "question": "What are the agent's core rules?",
+    "expected_keywords": [
+      "AGENTS",
+      "COO",
+      "Card",
+      "Core",
+      "Defne"
+    ],
+    "category": "agents-1",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 6,
+    "question": "How should tasks be delegated?",
+    "expected_keywords": [
+      "2026-03-22",
+      "ALL",
+      "BLOCKED",
+      "COO",
+      "Communication"
+    ],
+    "category": "agents-2",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 7,
+    "question": "What services are configured?",
+    "expected_keywords": [
+      "Ajan",
+      "COO",
+      "Content",
+      "Cross",
+      "Cross-Department"
+    ],
+    "category": "agents-3",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 8,
+    "question": "What commands are available?",
+    "expected_keywords": [
+      "Agent",
+      "Booster",
+      "Browser",
+      "COO",
+      "Dev"
+    ],
+    "category": "agents-4",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 9,
+    "question": "What are the key references?",
+    "expected_keywords": [
+      "Anti",
+      "Anti-drift",
+      "BLOCKED",
+      "Batch",
+      "Blocked"
+    ],
+    "category": "agents-5",
+    "source_file": "AGENTS.md"
+  },
+  {
+    "id": 10,
+    "question": "What should the heartbeat check?",
+    "expected_keywords": [
+      "2026-03-25",
+      "Alice",
+      "BLOCKED",
+      "CEO",
+      "COO"
+    ],
+    "category": "heartbeat-1",
+    "source_file": "HEARTBEAT.md"
+  },
+  {
+    "id": 11,
+    "question": "When should alerts fire?",
+    "expected_keywords": [
+      "COO",
+      "Checks",
+      "Dev",
+      "Don",
+      "FAIL"
+    ],
+    "category": "heartbeat-2",
+    "source_file": "HEARTBEAT.md"
+  },
+  {
+    "id": 12,
+    "question": "What monitoring tasks exist?",
+    "expected_keywords": [
+      "%{http_code}",
+      "Both",
+      "COO",
+      "Dev",
+      "HEARTBEAT_OK"
+    ],
+    "category": "heartbeat-3",
+    "source_file": "HEARTBEAT.md"
+  },
+  {
+    "id": 13,
+    "question": "How often should checks run?",
+    "expected_keywords": [
+      "COO",
+      "Code",
+      "Deploy",
+      "Dev",
+      "END"
+    ],
+    "category": "heartbeat-4",
+    "source_file": "HEARTBEAT.md"
+  },
+  {
+    "id": 14,
+    "question": "What are the alert rules?",
+    "expected_keywords": [
+      "ALL",
+      "Ali",
+      "BLOCKED",
+      "CEO",
+      "Defne"
+    ],
+    "category": "heartbeat-5",
+    "source_file": "HEARTBEAT.md"
+  },
+  {
+    "id": 15,
+    "question": "Who is the user?",
+    "expected_keywords": [
+      "Ali",
+      "CEO",
+      "COO",
+      "Dev",
+      "Kerem"
+    ],
+    "category": "user-1",
+    "source_file": "USER.md"
+  },
+  {
+    "id": 16,
+    "question": "What tools are available?",
+    "expected_keywords": [
+      "5435",
+      "Autofix",
+      "CSS",
+      "Code",
+      "Codebase"
+    ],
+    "category": "tools-1",
+    "source_file": "TOOLS.md"
+  },
+  {
+    "id": 17,
+    "question": "What services run on which ports?",
+    "expected_keywords": [
+      "3000",
+      "3001",
+      "Admin",
+      "Channel",
+      "Discord"
+    ],
+    "category": "tools-2",
+    "source_file": "TOOLS.md"
+  },
+  {
+    "id": 18,
+    "question": "What is this agent's identity?",
+    "expected_keywords": [
+      "Bug",
+      "Defne",
+      "IDENTITY",
+      "Lead",
+      "Quality"
+    ],
+    "category": "identity-1",
+    "source_file": "IDENTITY.md"
+  }
+]
