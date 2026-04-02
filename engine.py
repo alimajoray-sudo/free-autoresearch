@@ -94,7 +94,12 @@ def discover_projects() -> list[tuple[str, Path]]:
     for entry in sorted(PROJ_DIR.iterdir()):
         if not entry.is_dir():
             continue
-        if (entry / "agent-codex.py").exists() and (entry / "test-set.json").exists():
+        # Support both formats:
+        # 1. Full engine mode: agent-codex.py + test-set.json (free LLM router)
+        # 2. Simple loop mode: program.md + evaluate.sh (ACP/manual)
+        has_engine = (entry / "agent-codex.py").exists() and (entry / "test-set.json").exists()
+        has_simple = (entry / "program.md").exists() and (entry / "evaluate.sh").exists()
+        if has_engine or has_simple:
             projects.append((entry.name, entry))
     return projects
 
