@@ -2,10 +2,13 @@
 """
 router.py — Smart model router for autoresearch engine.
 
-Manages a pool of free/cheap LLM providers.
+Manages a pool of FREE LLM providers only.
 Tracks rate limits, auto-switches on exhaustion, enforces daily budget.
 
-Priority: OpenRouter free → DeepSeek cheap → error
+Priority: NVIDIA NIM free → OpenRouter free → error
+
+All providers are genuinely free (free tier / free credits / :free models).
+For paid providers (xAI, DeepSeek), set env vars and uncomment in MODEL_POOL.
 """
 import json
 import os
@@ -54,9 +57,12 @@ MODEL_POOL = [
     ("nvidia", "meta/llama-3.2-3b-instruct",                       "evaluator", 0, 0.0),
     ("nvidia", "google/gemma-3-12b-it",                            "evaluator", 0, 0.0),
     ("nvidia", "mistralai/mixtral-8x7b-instruct-v0.1",             "evaluator", 0, 0.0),
-    # Tier 0 — xAI Grok: primary MUTATOR (cheap, reliable, no rate limits)
-    ("xai", "grok-3-mini-fast",                                     "mutator",   0, 0.00025),
-    # Tier 0 — OpenRouter free: fallback for both (shared rate limits, use last)
+    # ── Optional paid providers (uncomment if you have API keys) ──────────
+    # ("xai", "grok-3-mini-fast",                                   "mutator",   0, 0.00025),
+    # ("xai", "grok-3-mini",                                        "both",      1, 0.0005),
+    # ("deepseek", "deepseek-chat",                                 "both",      2, 0.00042),
+    # ── Free providers ───────────────────────────────────────────────
+    # Tier 0 — OpenRouter free: primary mutator + evaluator (shared rate limits)
     ("openrouter", "meta-llama/llama-3.3-70b-instruct:free",       "both",      0, 0.0),
     ("openrouter", "google/gemma-3-27b-it:free",                   "both",      0, 0.0),
     ("openrouter", "qwen/qwen3-coder:free",                        "both",      0, 0.0),
@@ -67,10 +73,6 @@ MODEL_POOL = [
     ("openrouter", "google/gemma-3-12b-it:free",                   "both",      0, 0.0),
     ("openrouter", "z-ai/glm-4.5-air:free",                        "both",      0, 0.0),
     ("openrouter", "arcee-ai/trinity-mini:free",                   "evaluator", 0, 0.0),
-    # Tier 1 — xAI Grok: full model fallback
-    ("xai", "grok-3-mini",                                          "both",      1, 0.0005),
-    # Tier 2 — DeepSeek
-    ("deepseek",   "deepseek-chat",                                 "both",      2, 0.00042),
 ]
 
 # Models to permanently skip (guardrail/404 on this account)

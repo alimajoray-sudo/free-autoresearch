@@ -10,7 +10,7 @@ Free Autoresearch is a self-improving loop engine that:
 1. **Mutates** your target (prompt, code, config) using a free LLM
 2. **Evaluates** the change by running your custom metric command
 3. **Keeps improvements** and **reverts regressions** via Git
-4. **Cycles** through multiple free providers (OpenRouter, NVIDIA, xAI, HuggingFace, DeepSeek)
+4. **Cycles** through multiple free providers (OpenRouter :free models, NVIDIA NIM free tier)
 
 Perfect for overnight optimization. Perfect for zero budget. Perfect for staying focused on ideas instead of infrastructure.
 
@@ -36,15 +36,15 @@ Perfect for overnight optimization. Perfect for zero budget. Perfect for staying
                  ▼
 ┌─────────────────────────────────────────────────────────────┐
 │                    router.py (LLM selector)                 │
-│   Tier 0 (free) → Tier 1 (free) → Tier 2 (cheap) → error   │
-└────┬────────────┬────────────────┬────────────────┬─────────┘
-     │            │                │                │
-     ▼            ▼                ▼                ▼
-┌─────────┐ ┌──────────┐ ┌─────────┐ ┌──────────┐ ┌──────────┐
-│ OpenR   │ │  NVIDIA  │ │   xAI   │ │ HuggingF │ │ DeepSeek │
-│ (qwen)  │ │  (nim)   │ │ (grok)  │ │ (llama)  │ │ (dsk-ch) │
-│  $0     │ │   $0     │ │  ~$0    │ │   $0     │ │ $0.0004  │
-└─────────┘ └──────────┘ └─────────┘ └──────────┘ └──────────┘
+│   NVIDIA NIM (free) → OpenRouter :free → error             │
+└────┬──────────────────┬─────────────────────────────────────┘
+     │                  │
+     ▼                  ▼
+┌──────────┐     ┌─────────────┐
+│  NVIDIA  │     │  OpenRouter  │
+│  (nim)   │     │  (:free)     │
+│   $0     │     │    $0        │
+└──────────┘     └─────────────┘
                  │
                  ▼
     ┌─────────────────────────────┐
@@ -145,9 +145,13 @@ Built with FastAPI + live JSON polling. No database needed.
 |----------|------|-----------|------|-----------|-------|
 | **OpenRouter** | 0 | Free models (Qwen, Llama, etc) | OPENROUTER_API_KEY | 20 req/min | Many models, strict limits |
 | **NVIDIA NIM** | 0 | Free credits | NVIDIA_API_KEY | varies | Fast inference |
-| **xAI Grok** | 0 | Grok Mini Fast | XAI_API_KEY | ~$0/mo | Reliable, under-the-radar |
-| **HuggingFace** | 1 | Free Inference API | HF_TOKEN | 30 req/min | Serverless, slower |
-| **DeepSeek** | 2 | $5/mo free, cheap after | DEEPSEEK_API_KEY | high | Only fallback, under budget cap |
+
+**Optional paid providers** (uncomment in `router.py` MODEL_POOL if desired):
+
+| Provider | Tier | Cost | Auth | Notes |
+|----------|------|------|------|-------|
+| **xAI Grok** | 1 | ~$0.0003/call | XAI_API_KEY | Fast, reliable |
+| **DeepSeek** | 2 | ~$0.0004/call | DEEPSEEK_API_KEY | Cheap fallback |
 
 ## How the Router Works
 
@@ -157,13 +161,9 @@ The router implements a **tiered failover strategy**:
    - Zero cost, rate-limited
    - Router tries all Tier 0 pools before moving on
    
-2. **Tier 1 (free, fallback):** HuggingFace Inference API
-   - Zero cost, slower but reliable
-   - Used when Tier 0 exhausted
-   
-3. **Tier 2 (cheap, last resort):** xAI Grok, DeepSeek
-   - Minimal cost (~$0.0004–$0.0005 per call)
-   - Only activated if budget allows + Tier 0/1 exhausted
+2. **Optional paid tiers** (disabled by default):
+   - Uncomment xAI/DeepSeek in `router.py` if you want faster fallbacks
+   - Budget-capped to $0.50/day max
 
 ### Quota Tracking
 
@@ -274,14 +274,14 @@ Refine:
 ### Environment Variables
 
 ```bash
-# Required: at least ONE
-OPENROUTER_API_KEY=sk-or-v1-...
-HF_TOKEN=hf_...
+# Required: at least ONE free provider
+OPENROUTER_API_KEY=sk-or-v1-...    # Free :free models
+NVIDIA_API_KEY=nvapi-...            # Free NIM credits
 
-# Optional
-XAI_API_KEY=xai-...
-DEEPSEEK_API_KEY=sk-...
-NVIDIA_API_KEY=nvapi-...
+# Optional paid providers (uncomment in router.py to enable)
+# XAI_API_KEY=xai-...              # ~$0.0003/call
+# DEEPSEEK_API_KEY=sk-...          # ~$0.0004/call
+# HF_TOKEN=hf_...                  # Free tier available
 
 # Optional
 AUTORESEARCH_DAILY_BUDGET=0.50          # USD/day, default 0.50
