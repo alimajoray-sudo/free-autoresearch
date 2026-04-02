@@ -62,7 +62,12 @@ MODEL_POOL = [
     # ("xai", "grok-3-mini",                                        "both",      1, 0.0005),
     # ("deepseek", "deepseek-chat",                                 "both",      2, 0.00042),
     # ── Free providers ───────────────────────────────────────────────
-    # Tier 0 — OpenRouter free: primary mutator + evaluator (shared rate limits)
+    # Tier 0 — HuggingFace Inference API: free serverless models
+    ("hf", "Qwen/Qwen2.5-72B-Instruct",                            "both",      0, 0.0),
+    ("hf", "meta-llama/Llama-3.3-70B-Instruct",                    "both",      0, 0.0),
+    ("hf", "mistralai/Mixtral-8x22B-Instruct-v0.1",                "both",      0, 0.0),
+    ("hf", "google/gemma-2-27b-it",                                 "evaluator", 0, 0.0),
+    # Tier 0 — OpenRouter free: fallback (shared rate limits)
     ("openrouter", "meta-llama/llama-3.3-70b-instruct:free",       "both",      0, 0.0),
     ("openrouter", "google/gemma-3-27b-it:free",                   "both",      0, 0.0),
     ("openrouter", "qwen/qwen3-coder:free",                        "both",      0, 0.0),

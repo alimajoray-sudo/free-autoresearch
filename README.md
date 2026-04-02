@@ -143,7 +143,8 @@ Built with FastAPI + live JSON polling. No database needed.
 
 | Provider | Tier | Free Tier | Auth | Rate Limit | Notes |
 |----------|------|-----------|------|-----------|-------|
-| **OpenRouter** | 0 | Free models (Qwen, Llama, etc) | OPENROUTER_API_KEY | 20 req/min | Many models, strict limits |
+| **HuggingFace** | 0 | Free Inference API (Qwen 72B, Llama 70B, Mixtral) | HF_TOKEN | 30 req/min | Large free models |
+| **OpenRouter** | 0 | Free :free models (Qwen, Llama, Gemma, etc) | OPENROUTER_API_KEY | 20 req/min | Many models, strict limits |
 | **NVIDIA NIM** | 0 | Free credits | NVIDIA_API_KEY | varies | Fast inference |
 
 **Optional paid providers** (uncomment in `router.py` MODEL_POOL if desired):
