@@ -1,0 +1,122 @@
+[
+  {
+    "question": "What command/script should be used for: **Standard session labels:**?",
+    "expected_keywords": [
+      "**Standard",
+      "**Standard",
+      "session",
+      "labels:**"
+    ],
+    "category": "commands",
+    "id": "Q1"
+  },
+  {
+    "question": "What rule says: **Never do work yourself that a cheaper agent can do.**?",
+    "expected_keywords": [
+      "**Never",
+      "work",
+      "yourself",
+      "cheaper",
+      "agent"
+    ],
+    "category": "rules",
+    "id": "Q2"
+  },
+  {
+    "question": "What rule says: \u274c Never: extended tool loops (>7 calls for one task)?",
+    "expected_keywords": [
+      "Never:",
+      "extended",
+      "tool",
+      "loops",
+      "calls"
+    ],
+    "category": "rules",
+    "id": "Q3"
+  },
+  {
+    "question": "What rule says: \u274c Never: multi-file code builds (>2 files)?",
+    "expected_keywords": [
+      "Never:",
+      "multi-file",
+      "code",
+      "builds",
+      "files)"
+    ],
+    "category": "rules",
+    "id": "Q4"
+  },
+  {
+    "question": "What is FAILED used for?",
+    "expected_keywords": [
+      "FAILED"
+    ],
+    "category": "config",
+    "id": "Q5"
+  },
+  {
+    "question": "What is MANDATORY used for?",
+    "expected_keywords": [
+      "MANDATORY"
+    ],
+    "category": "config",
+    "id": "Q6"
+  },
+  {
+    "question": "What is PRIMARY used for?",
+    "expected_keywords": [
+      "PRIMARY"
+    ],
+    "category": "config",
+    "id": "Q7"
+  },
+  {
+    "question": "What does the 'Delegation Rules \u2014 LOCKED \ud83d\udd12' section cover?",
+    "expected_keywords": [
+      "Delegation",
+      "Rules",
+      "LOCKED"
+    ],
+    "category": "coverage",
+    "id": "Q8"
+  },
+  {
+    "question": "What does the 'Core Principle' section cover?",
+    "expected_keywords": [
+      "Core",
+      "Principle"
+    ],
+    "category": "coverage",
+    "id": "Q9"
+  },
+  {
+    "question": "What does the 'Cost Hierarchy (subscription-first)' section cover?",
+    "expected_keywords": [
+      "Cost",
+      "Hierarchy",
+      "(subscription-first)"
+    ],
+    "category": "coverage",
+    "id": "Q10"
+  },
+  {
+    "question": "What does the 'What Opus Does (and ONLY does)' section cover?",
+    "expected_keywords": [
+      "What",
+      "Opus",
+      "Does",
+      "(and"
+    ],
+    "category": "coverage",
+    "id": "Q11"
+  },
+  {
+    "question": "What does the 'Coding Delegation' section cover?",
+    "expected_keywords": [
+      "Coding",
+      "Delegation"
+    ],
+    "category": "coverage",
+    "id": "Q12"
+  }
+]

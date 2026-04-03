@@ -31,6 +31,7 @@ def discover_projects():
             if p.is_dir() and (p / "test-set.json").exists():
                 projects[p.name] = {
                     "name": p.name.replace("-", " ").title(),
+                    "path": p,
                     "status_file": Path(f"/tmp/{p.name}-status.json"),
                     "experiments_file": p / "experiments.jsonl",
                     "best_score_file": p / "best" / "score.txt",
@@ -79,6 +80,39 @@ async def all_projects():
         data["project_key"] = key
         data["best_score"] = read_best_score(proj["best_score_file"])
         data["experiment_count"] = read_experiment_count(proj["experiments_file"])
+        # Count improvements from experiments.jsonl (status="kept" means improvement)
+        try:
+            improvements = 0
+            baseline_score = 0
+            for line in proj["experiments_file"].read_text().splitlines():
+                if not line.strip(): continue
+                entry = json.loads(line)
+                if entry.get("status") in ("kept", "keep") or entry.get("improved"): improvements += 1
+                if entry.get("experiment") == 0 or entry.get("status") == "baseline":
+                    baseline_score = entry.get("score", 0)
+            data["improvements"] = improvements
+            if not data.get("baseline_score"): data["baseline_score"] = baseline_score
+        except Exception:
+            pass
+        # Add compression metrics
+        meta_file = proj["path"] / "meta.json"
+        best_file = proj["path"] / "best" / "system-prompt.md"
+        target_file = proj["path"] / "system-prompt.md"
+        try:
+            meta = json.loads(meta_file.read_text())
+            original_chars = meta.get("total_chars", 0)
+        except Exception:
+            try:
+                original_chars = len(target_file.read_text())
+            except Exception:
+                original_chars = 0
+        try:
+            best_chars = len(best_file.read_text())
+        except Exception:
+            best_chars = original_chars
+        data["original_chars"] = original_chars
+        data["best_chars"] = best_chars
+        data["compression_pct"] = round((1 - best_chars / original_chars) * 100, 1) if original_chars > 0 else 0
         result[key] = data
     return JSONResponse(result)
 

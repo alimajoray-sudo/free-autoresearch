@@ -1,0 +1,116 @@
+[
+  {
+    "question": "What command/script should be used for: bash scripts/health-check.sh              # Full r?",
+    "expected_keywords": [
+      "bash",
+      "bash",
+      "scripts/health-check.sh",
+      "#"
+    ],
+    "category": "commands",
+    "id": "Q1"
+  },
+  {
+    "question": "What rule says: | Gateway | Running, RPC OK | Must pass |?",
+    "expected_keywords": [
+      "Gateway",
+      "Running,",
+      "pass"
+    ],
+    "category": "rules",
+    "id": "Q2"
+  },
+  {
+    "question": "What rule says: | Node.js RSS | Gateway memory | Warn >500MB, Critical >800M?",
+    "expected_keywords": [
+      "Node.js",
+      "Gateway",
+      "memory",
+      "Warn",
+      ">500MB,"
+    ],
+    "category": "rules",
+    "id": "Q3"
+  },
+  {
+    "question": "What rule says: | System RAM | Free memory | Warn <2GB, Critical <1GB |?",
+    "expected_keywords": [
+      "System",
+      "Free",
+      "memory",
+      "Warn",
+      "<2GB,"
+    ],
+    "category": "rules",
+    "id": "Q4"
+  },
+  {
+    "question": "What is DANGEROUS used for?",
+    "expected_keywords": [
+      "DANGEROUS"
+    ],
+    "category": "config",
+    "id": "Q5"
+  },
+  {
+    "question": "What is BREAKS used for?",
+    "expected_keywords": [
+      "BREAKS"
+    ],
+    "category": "config",
+    "id": "Q6"
+  },
+  {
+    "question": "What is CRITICAL used for?",
+    "expected_keywords": [
+      "CRITICAL"
+    ],
+    "category": "config",
+    "id": "Q7"
+  },
+  {
+    "question": "What does the 'OpenClaw SysAdmin Skill' section cover?",
+    "expected_keywords": [
+      "OpenClaw",
+      "SysAdmin",
+      "Skill"
+    ],
+    "category": "coverage",
+    "id": "Q8"
+  },
+  {
+    "question": "What does the 'Purpose' section cover?",
+    "expected_keywords": [
+      "Purpose"
+    ],
+    "category": "coverage",
+    "id": "Q9"
+  },
+  {
+    "question": "What does the '1. Health Check Protocol' section cover?",
+    "expected_keywords": [
+      "Health",
+      "Check",
+      "Protocol"
+    ],
+    "category": "coverage",
+    "id": "Q10"
+  },
+  {
+    "question": "What does the 'Usage' section cover?",
+    "expected_keywords": [
+      "Usage"
+    ],
+    "category": "coverage",
+    "id": "Q11"
+  },
+  {
+    "question": "What does the '2. Context Optimization' section cover?",
+    "expected_keywords": [
+      "Context",
+      "Optimization"
+    ],
+    "category": "coverage",
+    "id": "Q12"
+  }
+]

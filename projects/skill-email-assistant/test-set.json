@@ -1,0 +1,126 @@
+[
+  {
+    "question": "What command/script should be used for: GAPI=\"~/.openclaw/workspace-main/skills/google-api?",
+    "expected_keywords": [
+      "GAPI=\"~/.openclaw/workspace-main/skills/google-api/scripts/google.sh\"",
+      "GAPI=\"~/.openclaw/workspace-main/skills/google-api/scripts/google.sh\""
+    ],
+    "category": "commands",
+    "id": "Q1"
+  },
+  {
+    "question": "What rule says: Ali receives high-volume emails across construction projects?",
+    "expected_keywords": [
+      "receives",
+      "high-volume",
+      "emails",
+      "across",
+      "construction"
+    ],
+    "category": "rules",
+    "id": "Q2"
+  },
+  {
+    "question": "What rule says: Do NOT ask Ali \"what should I do with this email\" unless cla?",
+    "expected_keywords": [
+      "\"what",
+      "should",
+      "email\"",
+      "unless",
+      "classification"
+    ],
+    "category": "rules",
+    "id": "Q3"
+  },
+  {
+    "question": "What rule says: - Never commit to numbers without Ali's explicit confirmatio?",
+    "expected_keywords": [
+      "commit",
+      "numbers",
+      "without",
+      "Ali's",
+      "explicit"
+    ],
+    "category": "rules",
+    "id": "Q4"
+  },
+  {
+    "question": "What is the path for google.sh?",
+    "expected_keywords": [
+      "~/.openclaw/workspace-main/skills/google-api/scripts/google.sh"
+    ],
+    "category": "paths",
+    "id": "Q5"
+  },
+  {
+    "question": "What is FIDIC used for?",
+    "expected_keywords": [
+      "FIDIC"
+    ],
+    "category": "config",
+    "id": "Q6"
+  },
+  {
+    "question": "What is ALKE used for?",
+    "expected_keywords": [
+      "ALKE"
+    ],
+    "category": "config",
+    "id": "Q7"
+  },
+  {
+    "question": "What is GAPI used for?",
+    "expected_keywords": [
+      "GAPI"
+    ],
+    "category": "config",
+    "id": "Q8"
+  },
+  {
+    "question": "What does the 'Email Assistant' section cover?",
+    "expected_keywords": [
+      "Email",
+      "Assistant"
+    ],
+    "category": "coverage",
+    "id": "Q9"
+  },
+  {
+    "question": "What does the 'How It Works' section cover?",
+    "expected_keywords": [
+      "Works"
+    ],
+    "category": "coverage",
+    "id": "Q10"
+  },
+  {
+    "question": "What does the 'Quick Commands' section cover?",
+    "expected_keywords": [
+      "Quick",
+      "Commands"
+    ],
+    "category": "coverage",
+    "id": "Q11"
+  },
+  {
+    "question": "What does the 'List recent emails (default 10)' section cover?",
+    "expected_keywords": [
+      "List",
+      "recent",
+      "emails",
+      "(default"
+    ],
+    "category": "coverage",
+    "id": "Q12"
+  },
+  {
+    "question": "What does the 'List unread only' section cover?",
+    "expected_keywords": [
+      "List",
+      "unread",
+      "only"
+    ],
+    "category": "coverage",
+    "id": "Q13"
+  }
+]

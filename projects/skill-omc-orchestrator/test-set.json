@@ -1,0 +1,99 @@
+[
+  {
+    "question": "What command/script should be used for: omc team N:claude[:role] \"task description\"?",
+    "expected_keywords": [
+      "omc",
+      "omc",
+      "team",
+      "N:claude[:role]"
+    ],
+    "category": "commands",
+    "id": "Q1"
+  },
+  {
+    "question": "What is the path for omc?",
+    "expected_keywords": [
+      "/opt/homebrew/bin/omc"
+    ],
+    "category": "paths",
+    "id": "Q2"
+  },
+  {
+    "question": "What is the path for omx?",
+    "expected_keywords": [
+      "/opt/homebrew/bin/omx"
+    ],
+    "category": "paths",
+    "id": "Q3"
+  },
+  {
+    "question": "What is the path for ajanpazari?",
+    "expected_keywords": [
+      "/opt/ajanpazari"
+    ],
+    "category": "paths",
+    "id": "Q4"
+  },
+  {
+    "question": "What is HIGH used for?",
+    "expected_keywords": [
+      "HIGH"
+    ],
+    "category": "config",
+    "id": "Q5"
+  },
+  {
+    "question": "What is MEDIUM used for?",
+    "expected_keywords": [
+      "MEDIUM"
+    ],
+    "category": "config",
+    "id": "Q6"
+  },
+  {
+    "question": "What does the 'OMC/OMX Orchestrator' section cover?",
+    "expected_keywords": [
+      "OMC/OMX",
+      "Orchestrator"
+    ],
+    "category": "coverage",
+    "id": "Q7"
+  },
+  {
+    "question": "What does the 'Tool Locations' section cover?",
+    "expected_keywords": [
+      "Tool",
+      "Locations"
+    ],
+    "category": "coverage",
+    "id": "Q8"
+  },
+  {
+    "question": "What does the 'Decision: omc vs omx' section cover?",
+    "expected_keywords": [
+      "Decision:"
+    ],
+    "category": "coverage",
+    "id": "Q9"
+  },
+  {
+    "question": "What does the 'Core Commands' section cover?",
+    "expected_keywords": [
+      "Core",
+      "Commands"
+    ],
+    "category": "coverage",
+    "id": "Q10"
+  },
+  {
+    "question": "What does the '1. Team Mode (primary use case)' section cover?",
+    "expected_keywords": [
+      "Team",
+      "Mode",
+      "(primary",
+      "case)"
+    ],
+    "category": "coverage",
+    "id": "Q11"
+  }
+]

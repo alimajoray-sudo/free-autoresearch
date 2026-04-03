@@ -1,0 +1,154 @@
+[
+  {
+    "question": "What URL is mentioned for github.com?",
+    "expected_keywords": [
+      "https://github.com/garrytan/gstack"
+    ],
+    "category": "urls",
+    "id": "Q1"
+  },
+  {
+    "question": "What URL is mentioned for localhost:3100?",
+    "expected_keywords": [
+      "http://localhost:3100"
+    ],
+    "category": "urls",
+    "id": "Q2"
+  },
+  {
+    "question": "What command/script should be used for: mkdir -p ~/.gstack/sessions ~/.gstack/projects ~/.?",
+    "expected_keywords": [
+      "mkdir",
+      "mkdir",
+      "-p",
+      "~/.gstack/sessions"
+    ],
+    "category": "commands",
+    "id": "Q3"
+  },
+  {
+    "question": "What service runs on port 3100?",
+    "expected_keywords": [
+      "3100"
+    ],
+    "category": "config",
+    "id": "Q4"
+  },
+  {
+    "question": "What rule says: **HARD GATE in Phases 1-2:** Do NOT create Paperclip project?",
+    "expected_keywords": [
+      "**HARD",
+      "GATE",
+      "Phases",
+      "1-2:**",
+      "create"
+    ],
+    "category": "rules",
+    "id": "Q5"
+  },
+  {
+    "question": "What rule says: Never say during Q1-Q6:?",
+    "expected_keywords": [
+      "during",
+      "Q1-Q6:"
+    ],
+    "category": "rules",
+    "id": "Q6"
+  },
+  {
+    "question": "What rule says: Always: take a position on every answer. State what evidence?",
+    "expected_keywords": [
+      "Always:",
+      "take",
+      "position",
+      "every",
+      "answer."
+    ],
+    "category": "rules",
+    "id": "Q7"
+  },
+  {
+    "question": "What is the path for office-hours?",
+    "expected_keywords": [
+      "/office-hours"
+    ],
+    "category": "paths",
+    "id": "Q8"
+  },
+  {
+    "question": "What is FILE used for?",
+    "expected_keywords": [
+      "FILE"
+    ],
+    "category": "config",
+    "id": "Q9"
+  },
+  {
+    "question": "What is NAME used for?",
+    "expected_keywords": [
+      "NAME"
+    ],
+    "category": "config",
+    "id": "Q10"
+  },
+  {
+    "question": "What is ALKE used for?",
+    "expected_keywords": [
+      "ALKE"
+    ],
+    "category": "config",
+    "id": "Q11"
+  },
+  {
+    "question": "What does the 'Office Hours \u2014 gstack for OpenClaw' section cover?",
+    "expected_keywords": [
+      "Office",
+      "Hours",
+      "gstack",
+      "OpenClaw"
+    ],
+    "category": "coverage",
+    "id": "Q12"
+  },
+  {
+    "question": "What does the 'Phase 0: Setup' section cover?",
+    "expected_keywords": [
+      "Phase",
+      "Setup"
+    ],
+    "category": "coverage",
+    "id": "Q13"
+  },
+  {
+    "question": "What does the 'Phase 1: Context & Mode' section cover?",
+    "expected_keywords": [
+      "Phase",
+      "Context",
+      "Mode"
+    ],
+    "category": "coverage",
+    "id": "Q14"
+  },
+  {
+    "question": "What does the 'Phase 2A: Startup Mode \u2014 The Six Forcing Questions' section cover?",
+    "expected_keywords": [
+      "Phase",
+      "Startup",
+      "Mode",
+      "Forcing"
+    ],
+    "category": "coverage",
+    "id": "Q15"
+  },
+  {
+    "question": "What does the 'Operating Principles (internalize these)' section cover?",
+    "expected_keywords": [
+      "Operating",
+      "Principles",
+      "(internalize",
+      "these)"
+    ],
+    "category": "coverage",
+    "id": "Q16"
+  }
+]

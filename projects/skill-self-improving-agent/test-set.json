@@ -1,0 +1,125 @@
+[
+  {
+    "question": "What URL is mentioned for github.com?",
+    "expected_keywords": [
+      "https://github.com/peterskoett/self-improving-agent.git"
+    ],
+    "category": "urls",
+    "id": "Q1"
+  },
+  {
+    "question": "What command/script should be used for: clawdhub install self-improving-agent?",
+    "expected_keywords": [
+      "clawdhub",
+      "clawdhub",
+      "install",
+      "self-improving-agent"
+    ],
+    "category": "commands",
+    "id": "Q2"
+  },
+  {
+    "question": "What rule says: Log learnings and errors to markdown files for continuous im?",
+    "expected_keywords": [
+      "learnings",
+      "errors",
+      "markdown",
+      "files",
+      "continuous"
+    ],
+    "category": "rules",
+    "id": "Q3"
+  },
+  {
+    "question": "What rule says: **Priority**: low | medium | high | critical?",
+    "expected_keywords": [
+      "**Priority**:",
+      "medium",
+      "high",
+      "critical"
+    ],
+    "category": "rules",
+    "id": "Q4"
+  },
+  {
+    "question": "What rule says: > Lock file is `pnpm-lock.yaml`. Must use `pnpm install`.?",
+    "expected_keywords": [
+      "Lock",
+      "file",
+      "`pnpm-lock.yaml`.",
+      "`pnpm",
+      "install`."
+    ],
+    "category": "rules",
+    "id": "Q5"
+  },
+  {
+    "question": "What is TOOLS used for?",
+    "expected_keywords": [
+      "TOOLS"
+    ],
+    "category": "config",
+    "id": "Q6"
+  },
+  {
+    "question": "What is SOUL used for?",
+    "expected_keywords": [
+      "SOUL"
+    ],
+    "category": "config",
+    "id": "Q7"
+  },
+  {
+    "question": "What is ERRORS used for?",
+    "expected_keywords": [
+      "ERRORS"
+    ],
+    "category": "config",
+    "id": "Q8"
+  },
+  {
+    "question": "What does the 'Self-Improvement Skill' section cover?",
+    "expected_keywords": [
+      "Self-Improvement",
+      "Skill"
+    ],
+    "category": "coverage",
+    "id": "Q9"
+  },
+  {
+    "question": "What does the 'Quick Reference' section cover?",
+    "expected_keywords": [
+      "Quick",
+      "Reference"
+    ],
+    "category": "coverage",
+    "id": "Q10"
+  },
+  {
+    "question": "What does the 'OpenClaw Setup (Recommended)' section cover?",
+    "expected_keywords": [
+      "OpenClaw",
+      "Setup",
+      "(Recommended)"
+    ],
+    "category": "coverage",
+    "id": "Q11"
+  },
+  {
+    "question": "What does the 'Installation' section cover?",
+    "expected_keywords": [
+      "Installation"
+    ],
+    "category": "coverage",
+    "id": "Q12"
+  },
+  {
+    "question": "What does the 'Workspace Structure' section cover?",
+    "expected_keywords": [
+      "Workspace",
+      "Structure"
+    ],
+    "category": "coverage",
+    "id": "Q13"
+  }
+]

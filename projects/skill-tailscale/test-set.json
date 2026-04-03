@@ -1,0 +1,141 @@
+[
+  {
+    "question": "What URL is mentioned for tailscale.com?",
+    "expected_keywords": [
+      "https://tailscale.com/install.sh"
+    ],
+    "category": "urls",
+    "id": "Q1"
+  },
+  {
+    "question": "What URL is mentioned for localhost:3000?",
+    "expected_keywords": [
+      "http://localhost:3000"
+    ],
+    "category": "urls",
+    "id": "Q2"
+  },
+  {
+    "question": "What command/script should be used for: brew install tailscale?",
+    "expected_keywords": [
+      "brew",
+      "brew",
+      "install",
+      "tailscale"
+    ],
+    "category": "commands",
+    "id": "Q3"
+  },
+  {
+    "question": "What service runs on port 3000?",
+    "expected_keywords": [
+      "3000"
+    ],
+    "category": "config",
+    "id": "Q4"
+  },
+  {
+    "question": "What rule says: # WARNING: Exposes to internet!?",
+    "expected_keywords": [
+      "WARNING:",
+      "Exposes",
+      "internet!"
+    ],
+    "category": "rules",
+    "id": "Q5"
+  },
+  {
+    "question": "What rule says: # On home/office machine (always-on)?",
+    "expected_keywords": [
+      "home/office",
+      "machine",
+      "(always-on)"
+    ],
+    "category": "rules",
+    "id": "Q6"
+  },
+  {
+    "question": "What rule says: ### 3. Tag Critical Servers?",
+    "expected_keywords": [
+      "Critical",
+      "Servers"
+    ],
+    "category": "rules",
+    "id": "Q7"
+  },
+  {
+    "question": "What is the path for tailscale.env?",
+    "expected_keywords": [
+      "~/.openclaw/secrets/tailscale.env"
+    ],
+    "category": "paths",
+    "id": "Q8"
+  },
+  {
+    "question": "What is WARNING used for?",
+    "expected_keywords": [
+      "WARNING"
+    ],
+    "category": "config",
+    "id": "Q9"
+  },
+  {
+    "question": "What is HTTPS used for?",
+    "expected_keywords": [
+      "HTTPS"
+    ],
+    "category": "config",
+    "id": "Q10"
+  },
+  {
+    "question": "What is SIEM used for?",
+    "expected_keywords": [
+      "SIEM"
+    ],
+    "category": "config",
+    "id": "Q11"
+  },
+  {
+    "question": "What does the 'Tailscale Skill' section cover?",
+    "expected_keywords": [
+      "Tailscale",
+      "Skill"
+    ],
+    "category": "coverage",
+    "id": "Q12"
+  },
+  {
+    "question": "What does the 'What is Tailscale?' section cover?",
+    "expected_keywords": [
+      "What",
+      "Tailscale?"
+    ],
+    "category": "coverage",
+    "id": "Q13"
+  },
+  {
+    "question": "What does the 'Setup' section cover?",
+    "expected_keywords": [
+      "Setup"
+    ],
+    "category": "coverage",
+    "id": "Q14"
+  },
+  {
+    "question": "What does the 'Install Tailscale' section cover?",
+    "expected_keywords": [
+      "Install",
+      "Tailscale"
+    ],
+    "category": "coverage",
+    "id": "Q15"
+  },
+  {
+    "question": "What does the 'Authenticate' section cover?",
+    "expected_keywords": [
+      "Authenticate"
+    ],
+    "category": "coverage",
+    "id": "Q16"
+  }
+]

@@ -1,0 +1,166 @@
+[
+  {
+    "question": "What URL is mentioned for ambient.emaygroup.org?",
+    "expected_keywords": [
+      "https://ambient.emaygroup.org"
+    ],
+    "category": "urls",
+    "id": "Q1"
+  },
+  {
+    "question": "What URL is mentioned for litterbox.catbox.moe?",
+    "expected_keywords": [
+      "https://litterbox.catbox.moe/resources/internals/api.php"
+    ],
+    "category": "urls",
+    "id": "Q2"
+  },
+  {
+    "question": "What URL is mentioned for litter.catbox.moe?",
+    "expected_keywords": [
+      "https://litter.catbox.moe/xxx.png"
+    ],
+    "category": "urls",
+    "id": "Q3"
+  },
+  {
+    "question": "What command/script should be used for: FFmpeg colorkey: colorkey=0x00FFFF:0.35:0.2?",
+    "expected_keywords": [
+      "FFmpeg",
+      "FFmpeg",
+      "colorkey:",
+      "colorkey=0x00FFFF:0.35:0.2"
+    ],
+    "category": "commands",
+    "id": "Q4"
+  },
+  {
+    "question": "What service runs on port 8099?",
+    "expected_keywords": [
+      "8099"
+    ],
+    "category": "config",
+    "id": "Q5"
+  },
+  {
+    "question": "What rule says: - \u274c DO NOT describe what's visible through the windows (no \"?",
+    "expected_keywords": [
+      "describe",
+      "what's",
+      "visible",
+      "through",
+      "windows"
+    ],
+    "category": "rules",
+    "id": "Q6"
+  },
+  {
+    "question": "What rule says: \". CRITICAL COMPOSITING INSTRUCTION: Every single window pan?",
+    "expected_keywords": [
+      "CRITICAL",
+      "COMPOSITING",
+      "INSTRUCTION:",
+      "Every",
+      "single"
+    ],
+    "category": "rules",
+    "id": "Q7"
+  },
+  {
+    "question": "What rule says: MUST be painted with PURE FLAT SOLID BRIGHT CYAN color #00FF?",
+    "expected_keywords": [
+      "painted",
+      "PURE",
+      "FLAT",
+      "SOLID",
+      "BRIGHT"
+    ],
+    "category": "rules",
+    "id": "Q8"
+  },
+  {
+    "question": "What is the path for server.py?",
+    "expected_keywords": [
+      "~/clawd/youtube-ambient/app-testb/server.py"
+    ],
+    "category": "paths",
+    "id": "Q9"
+  },
+  {
+    "question": "What is FLAT used for?",
+    "expected_keywords": [
+      "FLAT"
+    ],
+    "category": "config",
+    "id": "Q10"
+  },
+  {
+    "question": "What is BRIGHT used for?",
+    "expected_keywords": [
+      "BRIGHT"
+    ],
+    "category": "config",
+    "id": "Q11"
+  },
+  {
+    "question": "What is CYAN used for?",
+    "expected_keywords": [
+      "CYAN"
+    ],
+    "category": "config",
+    "id": "Q12"
+  },
+  {
+    "question": "What does the 'Ambient Video Production Pipeline \u2014 Working Reference' section cover?",
+    "expected_keywords": [
+      "Ambient",
+      "Video",
+      "Production",
+      "Pipeline"
+    ],
+    "category": "coverage",
+    "id": "Q13"
+  },
+  {
+    "question": "What does the 'The 3-Layer Pipeline' section cover?",
+    "expected_keywords": [
+      "3-Layer",
+      "Pipeline"
+    ],
+    "category": "coverage",
+    "id": "Q14"
+  },
+  {
+    "question": "What does the 'Layer 1 \u2014 Interior Image (Flux-2 Pro via KIE.ai)' section cover?",
+    "expected_keywords": [
+      "Layer",
+      "Interior",
+      "Image",
+      "(Flux-2"
+    ],
+    "category": "coverage",
+    "id": "Q15"
+  },
+  {
+    "question": "What does the 'Layer 2 \u2014 Window Masking (Dual approach)' section cover?",
+    "expected_keywords": [
+      "Layer",
+      "Window",
+      "Masking",
+      "(Dual"
+    ],
+    "category": "coverage",
+    "id": "Q16"
+  },
+  {
+    "question": "What does the 'Layer 3 \u2014 Kling 2.6 Animation (KIE.ai)' section cover?",
+    "expected_keywords": [
+      "Layer",
+      "Kling",
+      "Animation",
+      "(KIE.ai)"
+    ],
+    "category": "coverage",
+    "id": "Q17"
+  }
+]

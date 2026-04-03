@@ -1,0 +1,138 @@
+[
+  {
+    "question": "What URL is mentioned for github.com?",
+    "expected_keywords": [
+      "https://github.com/karpathy/autoresearch"
+    ],
+    "category": "urls",
+    "id": "Q1"
+  },
+  {
+    "question": "What URL is mentioned for 100.74.12.125:11434?",
+    "expected_keywords": [
+      "http://100.74.12.125:11434"
+    ],
+    "category": "urls",
+    "id": "Q2"
+  },
+  {
+    "question": "What command/script should be used for: LOOP:?",
+    "expected_keywords": [
+      "LOOP:",
+      "LOOP:"
+    ],
+    "category": "commands",
+    "id": "Q3"
+  },
+  {
+    "question": "What service runs on port 8820?",
+    "expected_keywords": [
+      "8820"
+    ],
+    "category": "config",
+    "id": "Q4"
+  },
+  {
+    "question": "What rule says: - **Always git-commits before any modification** \u2014 every exp?",
+    "expected_keywords": [
+      "**Always",
+      "git-commits",
+      "before",
+      "modification**",
+      "every"
+    ],
+    "category": "rules",
+    "id": "Q5"
+  },
+  {
+    "question": "What rule says: - **Never modifies files outside project dir** without expli?",
+    "expected_keywords": [
+      "**Never",
+      "modifies",
+      "files",
+      "outside",
+      "project"
+    ],
+    "category": "rules",
+    "id": "Q6"
+  },
+  {
+    "question": "What is the path for ?",
+    "expected_keywords": [
+      "/tmp/autoresearch-ref/"
+    ],
+    "category": "paths",
+    "id": "Q7"
+  },
+  {
+    "question": "What is BEST used for?",
+    "expected_keywords": [
+      "BEST"
+    ],
+    "category": "config",
+    "id": "Q8"
+  },
+  {
+    "question": "What is OLLAMA_URL used for?",
+    "expected_keywords": [
+      "OLLAMA_URL"
+    ],
+    "category": "config",
+    "id": "Q9"
+  },
+  {
+    "question": "What is LOOP used for?",
+    "expected_keywords": [
+      "LOOP"
+    ],
+    "category": "config",
+    "id": "Q10"
+  },
+  {
+    "question": "What does the 'autoresearch' section cover?",
+    "expected_keywords": [
+      "autoresearch"
+    ],
+    "category": "coverage",
+    "id": "Q11"
+  },
+  {
+    "question": "What does the 'Core Concept' section cover?",
+    "expected_keywords": [
+      "Core",
+      "Concept"
+    ],
+    "category": "coverage",
+    "id": "Q12"
+  },
+  {
+    "question": "What does the 'Quick Start (3 commands)' section cover?",
+    "expected_keywords": [
+      "Quick",
+      "Start",
+      "commands)"
+    ],
+    "category": "coverage",
+    "id": "Q13"
+  },
+  {
+    "question": "What does the '1. Scaffold a new project' section cover?",
+    "expected_keywords": [
+      "Scaffold",
+      "project"
+    ],
+    "category": "coverage",
+    "id": "Q14"
+  },
+  {
+    "question": "What does the '2. Edit program.md to describe your goal' section cover?",
+    "expected_keywords": [
+      "Edit",
+      "program.md",
+      "describe",
+      "your"
+    ],
+    "category": "coverage",
+    "id": "Q15"
+  }
+]

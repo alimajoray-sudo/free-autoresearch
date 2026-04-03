@@ -1,0 +1,140 @@
+[
+  {
+    "question": "What URL is mentioned for bright-canvas-a7k2.here.now?",
+    "expected_keywords": [
+      "https://bright-canvas-a7k2.here.now/"
+    ],
+    "category": "urls",
+    "id": "Q1"
+  },
+  {
+    "question": "What URL is mentioned for here.now?",
+    "expected_keywords": [
+      "https://here.now/claim?slug=bright-canvas-a7k2&token=abc123"
+    ],
+    "category": "urls",
+    "id": "Q2"
+  },
+  {
+    "question": "What command/script should be used for: ./scripts/publish.sh {file-or-dir}?",
+    "expected_keywords": [
+      "./scripts/publish.sh",
+      "./scripts/publish.sh",
+      "{file-or-dir}"
+    ],
+    "category": "commands",
+    "id": "Q3"
+  },
+  {
+    "question": "What rule says: **IMPORTANT**: After receiving an API key, save it immediate?",
+    "expected_keywords": [
+      "**IMPORTANT**:",
+      "After",
+      "receiving",
+      "key,",
+      "save"
+    ],
+    "category": "rules",
+    "id": "Q4"
+  },
+  {
+    "question": "What rule says: Never commit credentials or local state files (`~/.herenow/c?",
+    "expected_keywords": [
+      "commit",
+      "credentials",
+      "local",
+      "state",
+      "files"
+    ],
+    "category": "rules",
+    "id": "Q5"
+  },
+  {
+    "question": "What rule says: Never present this local file path as a URL, and never use i?",
+    "expected_keywords": [
+      "present",
+      "local",
+      "file",
+      "path",
+      "URL,"
+    ],
+    "category": "rules",
+    "id": "Q6"
+  },
+  {
+    "question": "What is the path for credentials?",
+    "expected_keywords": [
+      "~/.herenow/credentials"
+    ],
+    "category": "paths",
+    "id": "Q7"
+  },
+  {
+    "question": "What is API_KEY used for?",
+    "expected_keywords": [
+      "API_KEY"
+    ],
+    "category": "config",
+    "id": "Q8"
+  },
+  {
+    "question": "What is ALIAS used for?",
+    "expected_keywords": [
+      "ALIAS"
+    ],
+    "category": "config",
+    "id": "Q9"
+  },
+  {
+    "question": "What is HERENOW_API_KEY used for?",
+    "expected_keywords": [
+      "HERENOW_API_KEY"
+    ],
+    "category": "config",
+    "id": "Q10"
+  },
+  {
+    "question": "What does the 'here.now' section cover?",
+    "expected_keywords": [
+      "here.now"
+    ],
+    "category": "coverage",
+    "id": "Q11"
+  },
+  {
+    "question": "What does the 'Requirements' section cover?",
+    "expected_keywords": [
+      "Requirements"
+    ],
+    "category": "coverage",
+    "id": "Q12"
+  },
+  {
+    "question": "What does the 'Create a site' section cover?",
+    "expected_keywords": [
+      "Create",
+      "site"
+    ],
+    "category": "coverage",
+    "id": "Q13"
+  },
+  {
+    "question": "What does the 'Update an existing site' section cover?",
+    "expected_keywords": [
+      "Update",
+      "existing",
+      "site"
+    ],
+    "category": "coverage",
+    "id": "Q14"
+  },
+  {
+    "question": "What does the 'Client attribution' section cover?",
+    "expected_keywords": [
+      "Client",
+      "attribution"
+    ],
+    "category": "coverage",
+    "id": "Q15"
+  }
+]

@@ -1,0 +1,141 @@
+[
+  {
+    "question": "What URL is mentioned for 10.0.0.30:8766?",
+    "expected_keywords": [
+      "http://10.0.0.30:8766/"
+    ],
+    "category": "urls",
+    "id": "Q1"
+  },
+  {
+    "question": "What URL is mentioned for jer.emaygroup.org?",
+    "expected_keywords": [
+      "https://jer.emaygroup.org/api/services/media_player/media_pa"
+    ],
+    "category": "urls",
+    "id": "Q2"
+  },
+  {
+    "question": "What command/script should be used for: bash scripts/play-on-tv.sh /path/to/video.mp4?",
+    "expected_keywords": [
+      "bash",
+      "bash",
+      "scripts/play-on-tv.sh",
+      "/path/to/video.mp4"
+    ],
+    "category": "commands",
+    "id": "Q3"
+  },
+  {
+    "question": "What service runs on port 8766?",
+    "expected_keywords": [
+      "8766"
+    ],
+    "category": "config",
+    "id": "Q4"
+  },
+  {
+    "question": "What rule says: - Videos MUST be in `~/shared-files/videos/` for server acce?",
+    "expected_keywords": [
+      "Videos",
+      "`~/shared-files/videos/`",
+      "server",
+      "access"
+    ],
+    "category": "rules",
+    "id": "Q5"
+  },
+  {
+    "question": "What is the path for ?",
+    "expected_keywords": [
+      "~/shared-files/videos/"
+    ],
+    "category": "paths",
+    "id": "Q6"
+  },
+  {
+    "question": "What is the path for video-server-8766.pid?",
+    "expected_keywords": [
+      "/tmp/video-server-8766.pid"
+    ],
+    "category": "paths",
+    "id": "Q7"
+  },
+  {
+    "question": "What is the path for openclaw.json?",
+    "expected_keywords": [
+      "~/.openclaw/openclaw.json"
+    ],
+    "category": "paths",
+    "id": "Q8"
+  },
+  {
+    "question": "What is HA_TOKEN used for?",
+    "expected_keywords": [
+      "HA_TOKEN"
+    ],
+    "category": "config",
+    "id": "Q9"
+  },
+  {
+    "question": "What is LATEST used for?",
+    "expected_keywords": [
+      "LATEST"
+    ],
+    "category": "config",
+    "id": "Q10"
+  },
+  {
+    "question": "What is SERVER_PORT used for?",
+    "expected_keywords": [
+      "SERVER_PORT"
+    ],
+    "category": "config",
+    "id": "Q11"
+  },
+  {
+    "question": "What does the 'TV Player Skill' section cover?",
+    "expected_keywords": [
+      "Player",
+      "Skill"
+    ],
+    "category": "coverage",
+    "id": "Q12"
+  },
+  {
+    "question": "What does the 'Quick Start' section cover?",
+    "expected_keywords": [
+      "Quick",
+      "Start"
+    ],
+    "category": "coverage",
+    "id": "Q13"
+  },
+  {
+    "question": "What does the 'Supported TVs' section cover?",
+    "expected_keywords": [
+      "Supported"
+    ],
+    "category": "coverage",
+    "id": "Q14"
+  },
+  {
+    "question": "What does the 'Video Requirements' section cover?",
+    "expected_keywords": [
+      "Video",
+      "Requirements"
+    ],
+    "category": "coverage",
+    "id": "Q15"
+  },
+  {
+    "question": "What does the 'Video Server Management' section cover?",
+    "expected_keywords": [
+      "Video",
+      "Server",
+      "Management"
+    ],
+    "category": "coverage",
+    "id": "Q16"
+  }
+]

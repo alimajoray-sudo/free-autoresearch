@@ -36,7 +36,7 @@ PROGRAM_FILE = os.path.join(PROJECT_DIR, "program.md")
 TEST_SET_FILE = os.path.join(PROJECT_DIR, "test-set.json")
 RESULTS_FILE = os.path.join(PROJECT_DIR, "experiments.jsonl")
 BEST_DIR = os.path.join(PROJECT_DIR, "best")
-STATUS_FILE = f"/tmp/system-prompt-compression-status.json"
+STATUS_FILE = f"/tmp/skill-tailscale-status.json"
 
 ORIGINAL_SIZE = None  # set at startup
 

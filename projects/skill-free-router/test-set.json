@@ -1,0 +1,90 @@
+[
+  {
+    "question": "What command/script should be used for: **That's it.** The router handles everything else:?",
+    "expected_keywords": [
+      "**That's",
+      "**That's",
+      "it.**",
+      "The"
+    ],
+    "category": "commands",
+    "id": "Q1"
+  },
+  {
+    "question": "What is the path for .env?",
+    "expected_keywords": [
+      "~/.openclaw/.env"
+    ],
+    "category": "paths",
+    "id": "Q2"
+  },
+  {
+    "question": "What is DEEPSEEK_API_KEY used for?",
+    "expected_keywords": [
+      "DEEPSEEK_API_KEY"
+    ],
+    "category": "config",
+    "id": "Q3"
+  },
+  {
+    "question": "What is FIDIC used for?",
+    "expected_keywords": [
+      "FIDIC"
+    ],
+    "category": "config",
+    "id": "Q4"
+  },
+  {
+    "question": "What is ROUTER_DAILY_BUDGET used for?",
+    "expected_keywords": [
+      "ROUTER_DAILY_BUDGET"
+    ],
+    "category": "config",
+    "id": "Q5"
+  },
+  {
+    "question": "What does the 'free-router' section cover?",
+    "expected_keywords": [
+      "free-router"
+    ],
+    "category": "coverage",
+    "id": "Q6"
+  },
+  {
+    "question": "What does the 'Quick Start' section cover?",
+    "expected_keywords": [
+      "Quick",
+      "Start"
+    ],
+    "category": "coverage",
+    "id": "Q7"
+  },
+  {
+    "question": "What does the 'Usage Patterns' section cover?",
+    "expected_keywords": [
+      "Usage",
+      "Patterns"
+    ],
+    "category": "coverage",
+    "id": "Q8"
+  },
+  {
+    "question": "What does the 'Basic call' section cover?",
+    "expected_keywords": [
+      "Basic",
+      "call"
+    ],
+    "category": "coverage",
+    "id": "Q9"
+  },
+  {
+    "question": "What does the 'With system prompt' section cover?",
+    "expected_keywords": [
+      "With",
+      "system",
+      "prompt"
+    ],
+    "category": "coverage",
+    "id": "Q10"
+  }
+]

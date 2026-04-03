@@ -1,0 +1,116 @@
+[
+  {
+    "question": "What command/script should be used for: \"Call to confirm that the site inspection is sched?",
+    "expected_keywords": [
+      "\"Call",
+      "\"Call",
+      "to",
+      "confirm"
+    ],
+    "category": "commands",
+    "id": "Q1"
+  },
+  {
+    "question": "What rule says: **Always check `docs/contacts.md` first** when asked to call?",
+    "expected_keywords": [
+      "**Always",
+      "check",
+      "`docs/contacts.md`",
+      "first**",
+      "when"
+    ],
+    "category": "rules",
+    "id": "Q2"
+  },
+  {
+    "question": "What rule says: 2. **HUMANIZE.** Phrases must sound like a real person talki?",
+    "expected_keywords": [
+      "**HUMANIZE.**",
+      "Phrases",
+      "sound",
+      "like",
+      "real"
+    ],
+    "category": "rules",
+    "id": "Q3"
+  },
+  {
+    "question": "What rule says: ## CRITICAL RULES?",
+    "expected_keywords": [
+      "CRITICAL",
+      "RULES"
+    ],
+    "category": "rules",
+    "id": "Q4"
+  },
+  {
+    "question": "What is HUMANIZE used for?",
+    "expected_keywords": [
+      "HUMANIZE"
+    ],
+    "category": "config",
+    "id": "Q5"
+  },
+  {
+    "question": "What is MANDATORY used for?",
+    "expected_keywords": [
+      "MANDATORY"
+    ],
+    "category": "config",
+    "id": "Q6"
+  },
+  {
+    "question": "What is CRITICAL used for?",
+    "expected_keywords": [
+      "CRITICAL"
+    ],
+    "category": "config",
+    "id": "Q7"
+  },
+  {
+    "question": "What does the 'Vapi AI Phone Caller' section cover?",
+    "expected_keywords": [
+      "Vapi",
+      "Phone",
+      "Caller"
+    ],
+    "category": "coverage",
+    "id": "Q8"
+  },
+  {
+    "question": "What does the 'Contacts Directory' section cover?",
+    "expected_keywords": [
+      "Contacts",
+      "Directory"
+    ],
+    "category": "coverage",
+    "id": "Q9"
+  },
+  {
+    "question": "What does the 'Language Selection' section cover?",
+    "expected_keywords": [
+      "Language",
+      "Selection"
+    ],
+    "category": "coverage",
+    "id": "Q10"
+  },
+  {
+    "question": "What does the 'Quick Start' section cover?",
+    "expected_keywords": [
+      "Quick",
+      "Start"
+    ],
+    "category": "coverage",
+    "id": "Q11"
+  },
+  {
+    "question": "What does the 'English call' section cover?",
+    "expected_keywords": [
+      "English",
+      "call"
+    ],
+    "category": "coverage",
+    "id": "Q12"
+  }
+]

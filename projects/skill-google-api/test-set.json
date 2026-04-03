@@ -1,0 +1,137 @@
+[
+  {
+    "question": "What URL is mentioned for github.com?",
+    "expected_keywords": [
+      "https://github.com/usame-aleem/gog"
+    ],
+    "category": "urls",
+    "id": "Q1"
+  },
+  {
+    "question": "What URL is mentioned for developers.google.com?",
+    "expected_keywords": [
+      "https://developers.google.com/identity/protocols/oauth2/scop"
+    ],
+    "category": "urls",
+    "id": "Q2"
+  },
+  {
+    "question": "What command/script should be used for: brew install usame-aleem/tap/gog?",
+    "expected_keywords": [
+      "brew",
+      "brew",
+      "install",
+      "usame-aleem/tap/gog"
+    ],
+    "category": "commands",
+    "id": "Q3"
+  },
+  {
+    "question": "What rule says: **Timezone:** Always use `Asia/Hebron` for all calendar oper?",
+    "expected_keywords": [
+      "**Timezone:**",
+      "`Asia/Hebron`",
+      "calendar",
+      "operations",
+      "unless"
+    ],
+    "category": "rules",
+    "id": "Q4"
+  },
+  {
+    "question": "What rule says: - `label:IMPORTANT` \u2014 By label?",
+    "expected_keywords": [
+      "`label:IMPORTANT`",
+      "label"
+    ],
+    "category": "rules",
+    "id": "Q5"
+  },
+  {
+    "question": "What rule says: **Always pass times in ISO 8601 with Asia/Hebron offset (+03?",
+    "expected_keywords": [
+      "**Always",
+      "pass",
+      "times",
+      "8601",
+      "Asia/Hebron"
+    ],
+    "category": "rules",
+    "id": "Q6"
+  },
+  {
+    "question": "What is IMPORTANT used for?",
+    "expected_keywords": [
+      "IMPORTANT"
+    ],
+    "category": "config",
+    "id": "Q7"
+  },
+  {
+    "question": "What is GOG_KEYRING_PASSWORD used for?",
+    "expected_keywords": [
+      "GOG_KEYRING_PASSWORD"
+    ],
+    "category": "config",
+    "id": "Q8"
+  },
+  {
+    "question": "What is ALKE used for?",
+    "expected_keywords": [
+      "ALKE"
+    ],
+    "category": "config",
+    "id": "Q9"
+  },
+  {
+    "question": "What does the 'Google API Skill (gog CLI)' section cover?",
+    "expected_keywords": [
+      "Google",
+      "Skill",
+      "(gog",
+      "CLI)"
+    ],
+    "category": "coverage",
+    "id": "Q10"
+  },
+  {
+    "question": "What does the 'Quick Setup' section cover?",
+    "expected_keywords": [
+      "Quick",
+      "Setup"
+    ],
+    "category": "coverage",
+    "id": "Q11"
+  },
+  {
+    "question": "What does the 'or: npm install -g gogcli' section cover?",
+    "expected_keywords": [
+      "install",
+      "gogcli"
+    ],
+    "category": "coverage",
+    "id": "Q12"
+  },
+  {
+    "question": "What does the 'Follow browser prompt to grant OAuth scope' section cover?",
+    "expected_keywords": [
+      "Follow",
+      "browser",
+      "prompt",
+      "grant"
+    ],
+    "category": "coverage",
+    "id": "Q13"
+  },
+  {
+    "question": "What does the 'Tokens stored securely in system keyring' section cover?",
+    "expected_keywords": [
+      "Tokens",
+      "stored",
+      "securely",
+      "system"
+    ],
+    "category": "coverage",
+    "id": "Q14"
+  }
+]

@@ -1,0 +1,112 @@
+[
+  {
+    "question": "What URL is mentioned for localhost:8820?",
+    "expected_keywords": [
+      "http://localhost:8820/collections"
+    ],
+    "category": "urls",
+    "id": "Q1"
+  },
+  {
+    "question": "What command/script should be used for: **Domain-specific chunking \u2014 read `references/chun?",
+    "expected_keywords": [
+      "**Domain-specific",
+      "**Domain-specific",
+      "chunking",
+      "\u2014"
+    ],
+    "category": "commands",
+    "id": "Q2"
+  },
+  {
+    "question": "What service runs on port 8820?",
+    "expected_keywords": [
+      "8820"
+    ],
+    "category": "config",
+    "id": "Q3"
+  },
+  {
+    "question": "What rule says: ### Semantic Search (always include)?",
+    "expected_keywords": [
+      "Semantic",
+      "Search",
+      "(always",
+      "include)"
+    ],
+    "category": "rules",
+    "id": "Q4"
+  },
+  {
+    "question": "What is FIDIC used for?",
+    "expected_keywords": [
+      "FIDIC"
+    ],
+    "category": "config",
+    "id": "Q5"
+  },
+  {
+    "question": "What is SYSTEM_PROMPT used for?",
+    "expected_keywords": [
+      "SYSTEM_PROMPT"
+    ],
+    "category": "config",
+    "id": "Q6"
+  },
+  {
+    "question": "What is SELECT used for?",
+    "expected_keywords": [
+      "SELECT"
+    ],
+    "category": "config",
+    "id": "Q7"
+  },
+  {
+    "question": "What does the 'Hybrid RAG System Builder' section cover?",
+    "expected_keywords": [
+      "Hybrid",
+      "System",
+      "Builder"
+    ],
+    "category": "coverage",
+    "id": "Q8"
+  },
+  {
+    "question": "What does the 'Core Insight' section cover?",
+    "expected_keywords": [
+      "Core",
+      "Insight"
+    ],
+    "category": "coverage",
+    "id": "Q9"
+  },
+  {
+    "question": "What does the 'When to Use Which' section cover?",
+    "expected_keywords": [
+      "When",
+      "Which"
+    ],
+    "category": "coverage",
+    "id": "Q10"
+  },
+  {
+    "question": "What does the 'Step 1: Choose Architecture' section cover?",
+    "expected_keywords": [
+      "Step",
+      "Choose",
+      "Architecture"
+    ],
+    "category": "coverage",
+    "id": "Q11"
+  },
+  {
+    "question": "What does the 'Step 2: Ingestion Pipeline' section cover?",
+    "expected_keywords": [
+      "Step",
+      "Ingestion",
+      "Pipeline"
+    ],
+    "category": "coverage",
+    "id": "Q12"
+  }
+]

@@ -1,0 +1,131 @@
+[
+  {
+    "question": "What URL is mentioned for localhost:8799?",
+    "expected_keywords": [
+      "http://localhost:8799/query"
+    ],
+    "category": "urls",
+    "id": "Q1"
+  },
+  {
+    "question": "What command/script should be used for: curl -s http://localhost:8799/query -X POST -H \"Co?",
+    "expected_keywords": [
+      "curl",
+      "curl",
+      "-s",
+      "http://localhost:8799/query"
+    ],
+    "category": "commands",
+    "id": "Q2"
+  },
+  {
+    "question": "What service runs on port 8799?",
+    "expected_keywords": [
+      "8799"
+    ],
+    "category": "config",
+    "id": "Q3"
+  },
+  {
+    "question": "What rule says: Ali is a FIDIC expert. Do NOT over-explain standard clauses.?",
+    "expected_keywords": [
+      "FIDIC",
+      "expert.",
+      "over-explain",
+      "standard",
+      "clauses."
+    ],
+    "category": "rules",
+    "id": "Q4"
+  },
+  {
+    "question": "What rule says: **Always cite:** `Sub-Clause X.Y [Source: filename]`?",
+    "expected_keywords": [
+      "**Always",
+      "cite:**",
+      "`Sub-Clause",
+      "[Source:",
+      "filename]`"
+    ],
+    "category": "rules",
+    "id": "Q5"
+  },
+  {
+    "question": "What rule says: When Particular Conditions and General Conditions conflict, ?",
+    "expected_keywords": [
+      "When",
+      "Particular",
+      "Conditions",
+      "General",
+      "Conditions"
+    ],
+    "category": "rules",
+    "id": "Q6"
+  },
+  {
+    "question": "What is FIDIC used for?",
+    "expected_keywords": [
+      "FIDIC"
+    ],
+    "category": "config",
+    "id": "Q7"
+  },
+  {
+    "question": "What is RWWTP used for?",
+    "expected_keywords": [
+      "RWWTP"
+    ],
+    "category": "config",
+    "id": "Q8"
+  },
+  {
+    "question": "What does the 'Contract Search \u2014 Hebron RWWTP' section cover?",
+    "expected_keywords": [
+      "Contract",
+      "Search",
+      "Hebron",
+      "RWWTP"
+    ],
+    "category": "coverage",
+    "id": "Q9"
+  },
+  {
+    "question": "What does the 'Step 1 \u2014 Verify RAG is running' section cover?",
+    "expected_keywords": [
+      "Step",
+      "Verify",
+      "running"
+    ],
+    "category": "coverage",
+    "id": "Q10"
+  },
+  {
+    "question": "What does the 'Step 2 \u2014 Query' section cover?",
+    "expected_keywords": [
+      "Step",
+      "Query"
+    ],
+    "category": "coverage",
+    "id": "Q11"
+  },
+  {
+    "question": "What does the 'Step 3 \u2014 Multi-Clause Queries' section cover?",
+    "expected_keywords": [
+      "Step",
+      "Multi-Clause",
+      "Queries"
+    ],
+    "category": "coverage",
+    "id": "Q12"
+  },
+  {
+    "question": "What does the 'Step 4 \u2014 Interpreting Results' section cover?",
+    "expected_keywords": [
+      "Step",
+      "Interpreting",
+      "Results"
+    ],
+    "category": "coverage",
+    "id": "Q13"
+  }
+]

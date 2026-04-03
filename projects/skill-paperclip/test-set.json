@@ -1,0 +1,134 @@
+[
+  {
+    "question": "What URL is mentioned for localhost:3100?",
+    "expected_keywords": [
+      "http://localhost:3100"
+    ],
+    "category": "urls",
+    "id": "Q1"
+  },
+  {
+    "question": "What command/script should be used for: API_URL:    http://localhost:3100?",
+    "expected_keywords": [
+      "API_URL:",
+      "API_URL:",
+      "http://localhost:3100"
+    ],
+    "category": "commands",
+    "id": "Q2"
+  },
+  {
+    "question": "What service runs on port 3100?",
+    "expected_keywords": [
+      "3100"
+    ],
+    "category": "config",
+    "id": "Q3"
+  },
+  {
+    "question": "What rule says: Do NOT use for the actual domain work itself (writing code, ?",
+    "expected_keywords": [
+      "actual",
+      "domain",
+      "work",
+      "itself",
+      "(writing"
+    ],
+    "category": "rules",
+    "id": "Q4"
+  },
+  {
+    "question": "What rule says: Always fetch current roster if unsure:?",
+    "expected_keywords": [
+      "fetch",
+      "current",
+      "roster",
+      "unsure:"
+    ],
+    "category": "rules",
+    "id": "Q5"
+  },
+  {
+    "question": "What rule says: Priority values: `critical`, `high`, `medium`, `low`?",
+    "expected_keywords": [
+      "Priority",
+      "values:",
+      "`critical`,",
+      "`high`,",
+      "`medium`,"
+    ],
+    "category": "rules",
+    "id": "Q6"
+  },
+  {
+    "question": "What is PREFIX used for?",
+    "expected_keywords": [
+      "PREFIX"
+    ],
+    "category": "config",
+    "id": "Q7"
+  },
+  {
+    "question": "What is API_KEY used for?",
+    "expected_keywords": [
+      "API_KEY"
+    ],
+    "category": "config",
+    "id": "Q8"
+  },
+  {
+    "question": "What is PC_KEY used for?",
+    "expected_keywords": [
+      "PC_KEY"
+    ],
+    "category": "config",
+    "id": "Q9"
+  },
+  {
+    "question": "What does the 'Paperclip Skill \u2014 AjanPazar\u0131 Control Plane' section cover?",
+    "expected_keywords": [
+      "Paperclip",
+      "Skill",
+      "AjanPazar\u0131",
+      "Control"
+    ],
+    "category": "coverage",
+    "id": "Q10"
+  },
+  {
+    "question": "What does the 'Identity' section cover?",
+    "expected_keywords": [
+      "Identity"
+    ],
+    "category": "coverage",
+    "id": "Q11"
+  },
+  {
+    "question": "What does the 'Agent Roster' section cover?",
+    "expected_keywords": [
+      "Agent",
+      "Roster"
+    ],
+    "category": "coverage",
+    "id": "Q12"
+  },
+  {
+    "question": "What does the 'Core Operations' section cover?",
+    "expected_keywords": [
+      "Core",
+      "Operations"
+    ],
+    "category": "coverage",
+    "id": "Q13"
+  },
+  {
+    "question": "What does the 'List Issues (Tasks)' section cover?",
+    "expected_keywords": [
+      "List",
+      "Issues",
+      "(Tasks)"
+    ],
+    "category": "coverage",
+    "id": "Q14"
+  }
+]

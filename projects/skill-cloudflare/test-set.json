@@ -1,0 +1,136 @@
+[
+  {
+    "question": "What URL is mentioned for api.cloudflare.com?",
+    "expected_keywords": [
+      "https://api.cloudflare.com/client/v4/user/tokens/permission_"
+    ],
+    "category": "urls",
+    "id": "Q1"
+  },
+  {
+    "question": "What URL is mentioned for localhost:3000?",
+    "expected_keywords": [
+      "http://localhost:3000"
+    ],
+    "category": "urls",
+    "id": "Q2"
+  },
+  {
+    "question": "What command/script should be used for: CLOUDFLARE_API_TOKEN=<token-with-create-permission?",
+    "expected_keywords": [
+      "CLOUDFLARE_API_TOKEN=<token-with-create-permissions>",
+      "CLOUDFLARE_API_TOKEN=<token-with-create-permissions>"
+    ],
+    "category": "commands",
+    "id": "Q3"
+  },
+  {
+    "question": "What service runs on port 3000?",
+    "expected_keywords": [
+      "3000"
+    ],
+    "category": "config",
+    "id": "Q4"
+  },
+  {
+    "question": "What service runs on port 8080?",
+    "expected_keywords": [
+      "8080"
+    ],
+    "category": "config",
+    "id": "Q5"
+  },
+  {
+    "question": "What rule says: **We have a token creator token.** NEVER ask Ali to create t?",
+    "expected_keywords": [
+      "**We",
+      "token",
+      "creator",
+      "token.**",
+      "create"
+    ],
+    "category": "rules",
+    "id": "Q6"
+  },
+  {
+    "question": "What is the path for cloudflare.env?",
+    "expected_keywords": [
+      "~/.openclaw/secrets/cloudflare.env"
+    ],
+    "category": "paths",
+    "id": "Q7"
+  },
+  {
+    "question": "What is CLOUDFLARE_TUNNEL_TOKEN used for?",
+    "expected_keywords": [
+      "CLOUDFLARE_TUNNEL_TOKEN"
+    ],
+    "category": "config",
+    "id": "Q8"
+  },
+  {
+    "question": "What is TUNNEL_ID used for?",
+    "expected_keywords": [
+      "TUNNEL_ID"
+    ],
+    "category": "config",
+    "id": "Q9"
+  },
+  {
+    "question": "What is CLOUDFLARE_ACCOUNT_ID used for?",
+    "expected_keywords": [
+      "CLOUDFLARE_ACCOUNT_ID"
+    ],
+    "category": "config",
+    "id": "Q10"
+  },
+  {
+    "question": "What does the 'Cloudflare Skill' section cover?",
+    "expected_keywords": [
+      "Cloudflare",
+      "Skill"
+    ],
+    "category": "coverage",
+    "id": "Q11"
+  },
+  {
+    "question": "What does the 'Setup' section cover?",
+    "expected_keywords": [
+      "Setup"
+    ],
+    "category": "coverage",
+    "id": "Q12"
+  },
+  {
+    "question": "What does the 'Option 1: Full access token (can create other tokens)' section cover?",
+    "expected_keywords": [
+      "Option",
+      "Full",
+      "access",
+      "token"
+    ],
+    "category": "coverage",
+    "id": "Q13"
+  },
+  {
+    "question": "What does the 'Option 2: Service-specific tokens' section cover?",
+    "expected_keywords": [
+      "Option",
+      "Service-specific",
+      "tokens"
+    ],
+    "category": "coverage",
+    "id": "Q14"
+  },
+  {
+    "question": "What does the '\u26a0\ufe0f Token Creator \u2014 LOCKED RULE (2026-03-19)' section cover?",
+    "expected_keywords": [
+      "Token",
+      "Creator",
+      "LOCKED",
+      "RULE"
+    ],
+    "category": "coverage",
+    "id": "Q15"
+  }
+]

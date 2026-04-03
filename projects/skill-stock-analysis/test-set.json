@@ -1,0 +1,126 @@
+[
+  {
+    "question": "What URL is mentioned for finance.yahoo.com?",
+    "expected_keywords": [
+      "https://finance.yahoo.com"
+    ],
+    "category": "urls",
+    "id": "Q1"
+  },
+  {
+    "question": "What rule says: **IMPORTANT:** Pass ONLY the stock ticker symbol(s) as argum?",
+    "expected_keywords": [
+      "**IMPORTANT:**",
+      "Pass",
+      "ONLY",
+      "stock",
+      "ticker"
+    ],
+    "category": "rules",
+    "id": "Q2"
+  },
+  {
+    "question": "What rule says: - Concentration warnings (>30% in single asset)?",
+    "expected_keywords": [
+      "Concentration",
+      "warnings",
+      "(>30%",
+      "single",
+      "asset)"
+    ],
+    "category": "rules",
+    "id": "Q3"
+  },
+  {
+    "question": "What rule says: - Pre-earnings warning (< 14 days): Recommends HOLD instead ?",
+    "expected_keywords": [
+      "Pre-earnings",
+      "warning",
+      "days):",
+      "Recommends",
+      "HOLD"
+    ],
+    "category": "rules",
+    "id": "Q4"
+  },
+  {
+    "question": "What is the path for portfolios.json?",
+    "expected_keywords": [
+      "~/.clawdbot/skills/stock-analysis/portfolios.json"
+    ],
+    "category": "paths",
+    "id": "Q5"
+  },
+  {
+    "question": "What is AVAX used for?",
+    "expected_keywords": [
+      "AVAX"
+    ],
+    "category": "config",
+    "id": "Q6"
+  },
+  {
+    "question": "What is IMPORTANT used for?",
+    "expected_keywords": [
+      "IMPORTANT"
+    ],
+    "category": "config",
+    "id": "Q7"
+  },
+  {
+    "question": "What is MSFT used for?",
+    "expected_keywords": [
+      "MSFT"
+    ],
+    "category": "config",
+    "id": "Q8"
+  },
+  {
+    "question": "What does the 'Stock Analysis (v5.0)' section cover?",
+    "expected_keywords": [
+      "Stock",
+      "Analysis",
+      "(v5.0)"
+    ],
+    "category": "coverage",
+    "id": "Q9"
+  },
+  {
+    "question": "What does the 'Quick Start' section cover?",
+    "expected_keywords": [
+      "Quick",
+      "Start"
+    ],
+    "category": "coverage",
+    "id": "Q10"
+  },
+  {
+    "question": "What does the 'Cryptocurrency Analysis (v5.0)' section cover?",
+    "expected_keywords": [
+      "Cryptocurrency",
+      "Analysis",
+      "(v5.0)"
+    ],
+    "category": "coverage",
+    "id": "Q11"
+  },
+  {
+    "question": "What does the 'Portfolio Management (v5.0)' section cover?",
+    "expected_keywords": [
+      "Portfolio",
+      "Management",
+      "(v5.0)"
+    ],
+    "category": "coverage",
+    "id": "Q12"
+  },
+  {
+    "question": "What does the 'Create portfolio' section cover?",
+    "expected_keywords": [
+      "Create",
+      "portfolio"
+    ],
+    "category": "coverage",
+    "id": "Q13"
+  }
+]

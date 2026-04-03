@@ -1,0 +1,116 @@
+[
+  {
+    "question": "What command/script should be used for: memory/tutorials/YYYY-MM-DD_VIDEO_ID_[topic-slug].?",
+    "expected_keywords": [
+      "memory/tutorials/YYYY-MM-DD_VIDEO_ID_[topic-slug].md",
+      "memory/tutorials/YYYY-MM-DD_VIDEO_ID_[topic-slug].md"
+    ],
+    "category": "commands",
+    "id": "Q1"
+  },
+  {
+    "question": "What rule says: - Gotchas, bugs, or warnings?",
+    "expected_keywords": [
+      "Gotchas,",
+      "bugs,",
+      "warnings"
+    ],
+    "category": "rules",
+    "id": "Q2"
+  },
+  {
+    "question": "What rule says: \u2501\u2501\u2501 GOTCHAS & WARNINGS \u2501\u2501\u2501?",
+    "expected_keywords": [
+      "GOTCHAS",
+      "WARNINGS"
+    ],
+    "category": "rules",
+    "id": "Q3"
+  },
+  {
+    "question": "What rule says: [1-2 sentences: the single most important thing to remember]?",
+    "expected_keywords": [
+      "[1-2",
+      "sentences:",
+      "single",
+      "most",
+      "important"
+    ],
+    "category": "rules",
+    "id": "Q4"
+  },
+  {
+    "question": "What is CONCEPTS used for?",
+    "expected_keywords": [
+      "CONCEPTS"
+    ],
+    "category": "config",
+    "id": "Q5"
+  },
+  {
+    "question": "What is PROMPTS used for?",
+    "expected_keywords": [
+      "PROMPTS"
+    ],
+    "category": "config",
+    "id": "Q6"
+  },
+  {
+    "question": "What is DD_VIDEO_ID_ used for?",
+    "expected_keywords": [
+      "DD_VIDEO_ID_"
+    ],
+    "category": "config",
+    "id": "Q7"
+  },
+  {
+    "question": "What does the 'YT Tutorial Learner' section cover?",
+    "expected_keywords": [
+      "Tutorial",
+      "Learner"
+    ],
+    "category": "coverage",
+    "id": "Q8"
+  },
+  {
+    "question": "What does the 'Step 1: Fetch Transcript' section cover?",
+    "expected_keywords": [
+      "Step",
+      "Fetch",
+      "Transcript"
+    ],
+    "category": "coverage",
+    "id": "Q9"
+  },
+  {
+    "question": "What does the 'Step 2: Detect Topic Domain' section cover?",
+    "expected_keywords": [
+      "Step",
+      "Detect",
+      "Topic",
+      "Domain"
+    ],
+    "category": "coverage",
+    "id": "Q10"
+  },
+  {
+    "question": "What does the 'Step 3: Extract Learnings' section cover?",
+    "expected_keywords": [
+      "Step",
+      "Extract",
+      "Learnings"
+    ],
+    "category": "coverage",
+    "id": "Q11"
+  },
+  {
+    "question": "What does the 'Step 4: Format Output' section cover?",
+    "expected_keywords": [
+      "Step",
+      "Format",
+      "Output"
+    ],
+    "category": "coverage",
+    "id": "Q12"
+  }
+]

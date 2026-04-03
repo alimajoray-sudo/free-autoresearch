@@ -1,0 +1,115 @@
+[
+  {
+    "question": "What command/script should be used for: Action Taken?",
+    "expected_keywords": [
+      "Action",
+      "Action",
+      "Taken"
+    ],
+    "category": "commands",
+    "id": "Q1"
+  },
+  {
+    "question": "What rule says: - **Priority**: critical | high | medium | low?",
+    "expected_keywords": [
+      "**Priority**:",
+      "critical",
+      "high",
+      "medium"
+    ],
+    "category": "rules",
+    "id": "Q2"
+  },
+  {
+    "question": "What rule says: - **config-edit skill**: Always check `memory/ml/rules.md` \u2192?",
+    "expected_keywords": [
+      "**config-edit",
+      "skill**:",
+      "check",
+      "`memory/ml/rules.md`",
+      "config"
+    ],
+    "category": "rules",
+    "id": "Q3"
+  },
+  {
+    "question": "What is the path for openclaw.json?",
+    "expected_keywords": [
+      "~/.openclaw/openclaw.json"
+    ],
+    "category": "paths",
+    "id": "Q4"
+  },
+  {
+    "question": "What is ANALYZER used for?",
+    "expected_keywords": [
+      "ANALYZER"
+    ],
+    "category": "config",
+    "id": "Q5"
+  },
+  {
+    "question": "What is TOOLS used for?",
+    "expected_keywords": [
+      "TOOLS"
+    ],
+    "category": "config",
+    "id": "Q6"
+  },
+  {
+    "question": "What is SOUL used for?",
+    "expected_keywords": [
+      "SOUL"
+    ],
+    "category": "config",
+    "id": "Q7"
+  },
+  {
+    "question": "What does the 'Machine Learning Skill (Alice's In-Context Learning Loop)' section cover?",
+    "expected_keywords": [
+      "Machine",
+      "Learning",
+      "Skill",
+      "(Alice's"
+    ],
+    "category": "coverage",
+    "id": "Q8"
+  },
+  {
+    "question": "What does the 'Architecture' section cover?",
+    "expected_keywords": [
+      "Architecture"
+    ],
+    "category": "coverage",
+    "id": "Q9"
+  },
+  {
+    "question": "What does the 'Layer 1: Action Logger' section cover?",
+    "expected_keywords": [
+      "Layer",
+      "Action",
+      "Logger"
+    ],
+    "category": "coverage",
+    "id": "Q10"
+  },
+  {
+    "question": "What does the '[ACT-YYYYMMDD-NNN] category' section cover?",
+    "expected_keywords": [
+      "[ACT-YYYYMMDD-NNN]",
+      "category"
+    ],
+    "category": "coverage",
+    "id": "Q11"
+  },
+  {
+    "question": "What does the 'Layer 2: Outcome Collector' section cover?",
+    "expected_keywords": [
+      "Layer",
+      "Outcome",
+      "Collector"
+    ],
+    "category": "coverage",
+    "id": "Q12"
+  }
+]

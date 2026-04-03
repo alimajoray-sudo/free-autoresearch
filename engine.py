@@ -27,6 +27,7 @@ STOPPED_FILE = STATE_DIR / "engine_stopped.txt"
 MIN_INTERVAL_S = 120   # 2 minutes between runs per project
 RUN_TIMEOUT_S  = 2400  # 40-minute subprocess timeout (rate-limited free models need time)
 BUDGET_SLEEP_S = 3600  # 1 hour when budget exhausted
+PLATEAU_THRESHOLD = 3  # Skip agent after N consecutive no-improvement experiments
 
 # ── Shutdown flag ──────────────────────────────────────────────────────────────
 _shutdown = False
@@ -86,6 +87,73 @@ def budget_ok() -> bool:
     except Exception:
         return True  # assume ok if file missing
 
+def read_project_chars(proj_path: Path) -> int:
+    """Read total_chars from meta.json or estimate from system-prompt.md."""
+    try:
+        meta = json.loads((proj_path / "meta.json").read_text())
+        return meta.get("total_chars", 5000)
+    except Exception:
+        try:
+            return len((proj_path / "system-prompt.md").read_text())
+        except Exception:
+            return 5000
+
+def count_consecutive_no_improve(proj_path: Path) -> int:
+    """Count consecutive non-improvement experiments from the end of experiments.jsonl."""
+    exp_file = proj_path / "experiments.jsonl"
+    if not exp_file.exists():
+        return 0
+    try:
+        lines = exp_file.read_text().strip().split("\n")
+        count = 0
+        for line in reversed(lines):
+            entry = json.loads(line)
+            if entry.get("status", "").startswith("keep"):
+                break
+            if entry.get("status") == "baseline":
+                break
+            count += 1
+        return count
+    except Exception:
+        return 0
+
+def allocate_experiments(projects: list[tuple[str, Path]], total_budget: int) -> dict[str, int]:
+    """Smart experiment allocation: size-proportional with plateau detection.
+    
+    Strategy:
+    - Round 1: 5 experiments per agent (broad coverage, ~80% of gains)
+    - Round 2: remaining budget proportional to file size (bigger = more savings)
+    - Plateau: skip agents with 3+ consecutive no-improvement
+    """
+    ROUND1_PER_AGENT = 5
+    
+    # Filter out plateaued agents
+    active = []
+    for name, path in projects:
+        no_improve = count_consecutive_no_improve(path)
+        if no_improve >= PLATEAU_THRESHOLD:
+            log_event("plateau_skip", project=name,
+                      consecutive_no_improve=no_improve)
+            continue
+        active.append((name, path))
+    
+    if not active:
+        return {}
+    
+    # Round 1: minimum allocation
+    alloc = {name: ROUND1_PER_AGENT for name, _ in active}
+    remaining = total_budget - (len(active) * ROUND1_PER_AGENT)
+    
+    if remaining > 0:
+        # Round 2: proportional to file size
+        sizes = {name: read_project_chars(path) for name, path in active}
+        total_size = sum(sizes.values())
+        for name, _ in active:
+            extra = max(3, round(remaining * sizes[name] / total_size))
+            alloc[name] += extra
+    
+    return alloc
+
 def discover_projects() -> list[tuple[str, Path]]:
     """Return [(name, path)] for runnable projects."""
     projects = []
@@ -138,17 +206,18 @@ def maybe_spawn_generator():
     log_event("generator_spawn", project="", pid=proc.pid)
 
 # ── Run a single project ───────────────────────────────────────────────────────
-def run_project(name: str, proj_path: Path):
+def run_project(name: str, proj_path: Path, max_experiments: int = 10):
     if _shutdown:
-        return
-
-    elapsed = seconds_since_last_run(name)
-    if elapsed < MIN_INTERVAL_S:
-        log_event("skip", project=name, reason=f"last_run {int(elapsed)}s ago")
         return
 
     wait_for_budget()
     if _shutdown:
+        return
+
+    # Skip plateaued agents
+    no_improve = count_consecutive_no_improve(proj_path)
+    if no_improve >= PLATEAU_THRESHOLD:
+        log_event("plateau_skip", project=name, consecutive_no_improve=no_improve)
         return
 
     score_before = read_score(proj_path)
@@ -157,16 +226,16 @@ def run_project(name: str, proj_path: Path):
     LOGS_DIR.mkdir(parents=True, exist_ok=True)
 
     log_event("run_start", project=name, score_before=score_before,
-              experiments=read_exp_count(proj_path))
+              experiments=read_exp_count(proj_path), max_experiments=max_experiments)
 
     t0 = time.time()
     try:
-        # Pass --resume if a baseline already exists (avoids re-running 20-30Q baseline every cycle)
+        # Pass --resume if a baseline already exists
         has_baseline = any(
             '"status": "baseline"' in line
             for line in (proj_path / "experiments.jsonl").open()
         ) if (proj_path / "experiments.jsonl").exists() else False
-        cmd = [sys.executable, "agent-codex.py", "--max", "10"]
+        cmd = [sys.executable, "agent-codex.py", "--max", str(max_experiments)]
         if has_baseline:
             cmd.append("--resume")
         with log_path.open("w") as log_fh:
@@ -182,7 +251,8 @@ def run_project(name: str, proj_path: Path):
         mark_last_run(name)
         log_event("run_done", project=name,
                   score_before=score_before, score_after=score_after,
-                  duration_s=duration, returncode=result.returncode)
+                  duration_s=duration, returncode=result.returncode,
+                  max_experiments=max_experiments)
     except subprocess.TimeoutExpired:
         duration = round(time.time() - t0, 1)
         log_event("run_error", project=name, reason="timeout",
@@ -201,8 +271,10 @@ def main():
     parser = argparse.ArgumentParser(description="Autoresearch Engine")
     parser.add_argument("--once",    action="store_true", help="Run one full cycle then exit")
     parser.add_argument("--project", metavar="NAME",      help="Only run this project")
+    parser.add_argument("--hours",   type=float, default=0, help="Stop after N hours (0=no limit)")
     parser.add_argument("--dry-run", action="store_true", help="Discover and print projects only")
     args = parser.parse_args()
+    deadline = time.time() + (args.hours * 3600) if args.hours > 0 else None
 
     LOGS_DIR.mkdir(parents=True, exist_ok=True)
     STATE_DIR.mkdir(parents=True, exist_ok=True)
@@ -227,19 +299,54 @@ def main():
             print(f"  {name:30s}  score={score:.3f}  experiments={exps}  path={path}")
         sys.exit(0)
 
+    # Estimate total experiment budget from time limit
+    # ~45 sec per experiment on free models
+    if args.hours > 0:
+        total_budget = int(args.hours * 3600 / 45)
+    else:
+        total_budget = len(projects) * 30  # default: 30 per project
+
+    # Smart allocation: size-proportional with plateau detection
+    alloc = allocate_experiments(projects, total_budget)
+    
     log_event("engine_start", project="",
-              projects=[n for n, _ in projects], pid=os.getpid())
+              projects=[n for n, _ in projects], pid=os.getpid(),
+              total_budget=total_budget, hours=args.hours or 0,
+              allocation={k: v for k, v in sorted(alloc.items(), key=lambda x: -x[1])})
 
     cycle = 0
     try:
         while not _shutdown:
             cycle += 1
-            log_event("cycle_start", project="", cycle=cycle)
+            
+            # Check deadline
+            if deadline and time.time() > deadline:
+                log_event("deadline_reached", project="", hours=args.hours)
+                break
+            
+            # Recalculate allocation each cycle (plateau detection updates)
+            if cycle > 1:
+                alloc = allocate_experiments(projects, max(total_budget // 3, len(projects) * 5))
 
-            for name, proj_path in projects:
+            log_event("cycle_start", project="", cycle=cycle,
+                      active_agents=len(alloc))
+
+            if not alloc:
+                log_event("all_plateaued", project="")
+                break
+
+            # Run projects in order of allocation (biggest first = most value)
+            proj_map = {n: p for n, p in projects}
+            for name in sorted(alloc, key=lambda n: -alloc[n]):
                 if _shutdown:
                     break
-                run_project(name, proj_path)
+                if deadline and time.time() > deadline:
+                    break
+                if name in proj_map:
+                    run_project(name, proj_map[name], max_experiments=alloc[name])
+                    # Brief cooldown between agents to let rate limits reset
+                    if not _shutdown:
+                        time.sleep(15)
 
             if not _shutdown:
                 maybe_spawn_generator()
@@ -247,10 +354,8 @@ def main():
             if args.once:
                 break
 
-            # Brief pause between cycles to avoid busy-spin when all projects
-            # are within their cooldown window
             if not _shutdown:
-                time.sleep(30)
+                time.sleep(10)
 
     finally:
         STOPPED_FILE.write_text(now_iso())
